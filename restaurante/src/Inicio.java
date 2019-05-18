@@ -57,7 +57,7 @@ public class Inicio extends javax.swing.JFrame {
         getContentPane().add(barra2, new org.netbeans.lib.awtextra.AbsoluteConstraints(808, 395, 350, 10));
 
         visible.setForeground(new java.awt.Color(255, 255, 255));
-        visible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Visible.png"))); // NOI18N
+        visible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Visible.jpg"))); // NOI18N
         visible.setBorder(null);
         visible.setBorderPainted(false);
         visible.setContentAreaFilled(false);
@@ -69,7 +69,7 @@ public class Inicio extends javax.swing.JFrame {
         getContentPane().add(visible, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 375, 30, 20));
 
         noVisible.setForeground(new java.awt.Color(255, 255, 255));
-        noVisible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/vista_tapada.png"))); // NOI18N
+        noVisible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/noVisible.png"))); // NOI18N
         noVisible.setBorder(null);
         noVisible.setBorderPainted(false);
         noVisible.setContentAreaFilled(false);
@@ -110,12 +110,9 @@ public class Inicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void visibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visibleActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_visibleActionPerformed
-
     private void noVisibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noVisibleActionPerformed
-        // TODO add your handling code here:
+        noVisible.setVisible(false);
+        visible.setVisible(true);
     }//GEN-LAST:event_noVisibleActionPerformed
 
     private void olvidemicontraseñaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_olvidemicontraseñaMouseClicked
@@ -123,6 +120,11 @@ public class Inicio extends javax.swing.JFrame {
         
         /*A qui se colocara a donde se quiere mandar*/
     }//GEN-LAST:event_olvidemicontraseñaMouseClicked
+
+    private void visibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visibleActionPerformed
+       visible.setVisible(false);
+       noVisible.setVisible(true);
+    }//GEN-LAST:event_visibleActionPerformed
 
     /**
      * @param args the command line arguments

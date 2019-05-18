@@ -26,21 +26,137 @@ public class Registro_de_usuario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        btnRegresar = new javax.swing.JButton();
+        titulo = new javax.swing.JLabel();
+        logo_pequeño = new javax.swing.JLabel();
+        BG = new javax.swing.JLabel();
+        usuario = new javax.swing.JLabel();
+        barra = new javax.swing.JLabel();
+        candado = new javax.swing.JLabel();
+        barra2 = new javax.swing.JLabel();
+        visible = new javax.swing.JButton();
+        noVisible = new javax.swing.JButton();
+        candado1 = new javax.swing.JLabel();
+        barra3 = new javax.swing.JLabel();
+        candado2 = new javax.swing.JLabel();
+        barra4 = new javax.swing.JLabel();
+        cumpleaños = new javax.swing.JLabel();
+        barra5 = new javax.swing.JLabel();
+        celular = new javax.swing.JLabel();
+        barra6 = new javax.swing.JLabel();
+        correo1 = new javax.swing.JLabel();
+        barra7 = new javax.swing.JLabel();
+        btnAceptar = new javax.swing.JButton();
+        fondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1280, 720));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
+        btnRegresar.setBorder(null);
+        btnRegresar.setBorderPainted(false);
+        btnRegresar.setContentAreaFilled(false);
+        btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
+        getContentPane().add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, 40, 40));
+
+        titulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Titulo.png"))); // NOI18N
+        getContentPane().add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 19, 330, -1));
+
+        logo_pequeño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Logo_BG.png"))); // NOI18N
+        getContentPane().add(logo_pequeño, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 4, 90, 70));
+
+        BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG.png"))); // NOI18N
+        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, -3, 640, 80));
+
+        usuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Usuario.png"))); // NOI18N
+        getContentPane().add(usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 126, 20, 30));
+
+        barra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(783, 150, 370, 10));
+
+        candado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Profile.png"))); // NOI18N
+        getContentPane().add(candado, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 310, 30, -1));
+
+        barra2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra2, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 396, 420, 10));
+
+        visible.setForeground(new java.awt.Color(255, 255, 255));
+        visible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Visible.jpg"))); // NOI18N
+        visible.setBorder(null);
+        visible.setBorderPainted(false);
+        visible.setContentAreaFilled(false);
+        visible.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                visibleActionPerformed(evt);
+            }
+        });
+        getContentPane().add(visible, new org.netbeans.lib.awtextra.AbsoluteConstraints(1112, 186, 30, 20));
+
+        noVisible.setForeground(new java.awt.Color(255, 255, 255));
+        noVisible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/noVisible.png"))); // NOI18N
+        noVisible.setBorder(null);
+        noVisible.setBorderPainted(false);
+        noVisible.setContentAreaFilled(false);
+        noVisible.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                noVisibleActionPerformed(evt);
+            }
+        });
+        getContentPane().add(noVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(1112, 186, 30, 20));
+
+        candado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Candado.png"))); // NOI18N
+        getContentPane().add(candado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 180, 20, 30));
+
+        barra3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra3, new org.netbeans.lib.awtextra.AbsoluteConstraints(783, 204, 390, 10));
+
+        candado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Profile.png"))); // NOI18N
+        getContentPane().add(candado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 253, 30, -1));
+
+        barra4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra4, new org.netbeans.lib.awtextra.AbsoluteConstraints(783, 272, 400, 10));
+
+        cumpleaños.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Cumpleaños.png"))); // NOI18N
+        getContentPane().add(cumpleaños, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 370, 20, 30));
+
+        barra5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra5, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 330, 410, 10));
+
+        celular.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Celular.png"))); // NOI18N
+        getContentPane().add(celular, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 490, 20, 30));
+
+        barra6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra6, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 515, 390, 10));
+
+        correo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Correo.png"))); // NOI18N
+        getContentPane().add(correo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 430, 30, 30));
+
+        barra7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra7, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 452, 410, 10));
+
+        btnAceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Aceptar.png"))); // NOI18N
+        btnAceptar.setBorder(null);
+        btnAceptar.setBorderPainted(false);
+        btnAceptar.setContentAreaFilled(false);
+        btnAceptar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_IngresarSecundario.png"))); // NOI18N
+        getContentPane().add(btnAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(795, 624, 340, 50));
+
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void visibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visibleActionPerformed
+        visible.setVisible(false);
+        noVisible.setVisible(true);
+    }//GEN-LAST:event_visibleActionPerformed
+
+    private void noVisibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noVisibleActionPerformed
+        noVisible.setVisible(false);
+        visible.setVisible(true);
+    }//GEN-LAST:event_noVisibleActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +194,27 @@ public class Registro_de_usuario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BG;
+    private javax.swing.JLabel barra;
+    private javax.swing.JLabel barra2;
+    private javax.swing.JLabel barra3;
+    private javax.swing.JLabel barra4;
+    private javax.swing.JLabel barra5;
+    private javax.swing.JLabel barra6;
+    private javax.swing.JLabel barra7;
+    private javax.swing.JButton btnAceptar;
+    private javax.swing.JButton btnRegresar;
+    private javax.swing.JLabel candado;
+    private javax.swing.JLabel candado1;
+    private javax.swing.JLabel candado2;
+    private javax.swing.JLabel celular;
+    private javax.swing.JLabel correo1;
+    private javax.swing.JLabel cumpleaños;
+    private javax.swing.JLabel fondo;
+    private javax.swing.JLabel logo_pequeño;
+    private javax.swing.JButton noVisible;
+    private javax.swing.JLabel titulo;
+    private javax.swing.JLabel usuario;
+    private javax.swing.JButton visible;
     // End of variables declaration//GEN-END:variables
 }

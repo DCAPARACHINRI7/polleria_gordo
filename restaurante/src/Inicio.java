@@ -36,6 +36,7 @@ public class Inicio extends javax.swing.JFrame {
         olvidemicontraseña = new javax.swing.JLabel();
         ingresar = new javax.swing.JButton();
         regustrar = new javax.swing.JButton();
+        olvidemicontraseña1 = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -82,13 +83,13 @@ public class Inicio extends javax.swing.JFrame {
 
         olvidemicontraseña.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         olvidemicontraseña.setForeground(new java.awt.Color(168, 12, 17));
-        olvidemicontraseña.setText("¿Olvidaste tu contraseña?");
+        olvidemicontraseña.setText("Términos y condiciones. Política de privacidad");
         olvidemicontraseña.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 olvidemicontraseñaMouseClicked(evt);
             }
         });
-        getContentPane().add(olvidemicontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 414, 160, 20));
+        getContentPane().add(olvidemicontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(834, 679, 290, 20));
 
         ingresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Ingresar.png"))); // NOI18N
         ingresar.setBorder(null);
@@ -103,6 +104,16 @@ public class Inicio extends javax.swing.JFrame {
         regustrar.setContentAreaFilled(false);
         regustrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_RegistrarseSecundario.png"))); // NOI18N
         getContentPane().add(regustrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 560, 340, 50));
+
+        olvidemicontraseña1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        olvidemicontraseña1.setForeground(new java.awt.Color(168, 12, 17));
+        olvidemicontraseña1.setText("¿Olvidaste tu contraseña?");
+        olvidemicontraseña1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                olvidemicontraseña1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(olvidemicontraseña1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 414, 160, 20));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -125,6 +136,10 @@ public class Inicio extends javax.swing.JFrame {
        visible.setVisible(false);
        noVisible.setVisible(true);
     }//GEN-LAST:event_visibleActionPerformed
+
+    private void olvidemicontraseña1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_olvidemicontraseña1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_olvidemicontraseña1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -170,6 +185,7 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel logo;
     private javax.swing.JButton noVisible;
     private javax.swing.JLabel olvidemicontraseña;
+    private javax.swing.JLabel olvidemicontraseña1;
     private javax.swing.JButton regustrar;
     private javax.swing.JLabel usuario;
     private javax.swing.JButton visible;

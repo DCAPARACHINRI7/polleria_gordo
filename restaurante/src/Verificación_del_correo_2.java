@@ -26,6 +26,7 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        olvidemicontraseña = new javax.swing.JLabel();
         btnSiguiente = new javax.swing.JButton();
         barra7 = new javax.swing.JLabel();
         correo1 = new javax.swing.JLabel();
@@ -38,6 +39,16 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        olvidemicontraseña.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        olvidemicontraseña.setForeground(new java.awt.Color(168, 12, 17));
+        olvidemicontraseña.setText("Reenvíar Código");
+        olvidemicontraseña.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                olvidemicontraseñaMouseClicked(evt);
+            }
+        });
+        getContentPane().add(olvidemicontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(896, 604, 140, 20));
 
         btnSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Siguiente.png"))); // NOI18N
         btnSiguiente.setBorder(null);
@@ -78,6 +89,11 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void olvidemicontraseñaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_olvidemicontraseñaMouseClicked
+
+        /*A qui se colocara a donde se quiere mandar*/
+    }//GEN-LAST:event_olvidemicontraseñaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -122,6 +138,7 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
     private javax.swing.JLabel correo1;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel logo_pequeño;
+    private javax.swing.JLabel olvidemicontraseña;
     private javax.swing.JLabel texto;
     private javax.swing.JLabel verificaciondelcorreo;
     // End of variables declaration//GEN-END:variables

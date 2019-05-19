@@ -34,8 +34,12 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         barra3 = new javax.swing.JLabel();
         visible = new javax.swing.JButton();
         candado2 = new javax.swing.JLabel();
-        visible1 = new javax.swing.JButton();
         barra4 = new javax.swing.JLabel();
+        visible1 = new javax.swing.JButton();
+        noVisible = new javax.swing.JButton();
+        visible2 = new javax.swing.JButton();
+        noVisible1 = new javax.swing.JButton();
+        btnAceptar = new javax.swing.JButton();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,7 +53,7 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         btnRegresar.setBorderPainted(false);
         btnRegresar.setContentAreaFilled(false);
         btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
-        getContentPane().add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 10, 40, 40));
+        getContentPane().add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 20, 40, 40));
 
         logo_pequeño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Logo_BG.png"))); // NOI18N
         getContentPane().add(logo_pequeño, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 0, 90, 70));
@@ -58,10 +62,10 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, -4, 640, 80));
 
         candado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Candado.png"))); // NOI18N
-        getContentPane().add(candado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 224, 20, 30));
+        getContentPane().add(candado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(787, 224, 20, 30));
 
         barra3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
-        getContentPane().add(barra3, new org.netbeans.lib.awtextra.AbsoluteConstraints(761, 257, 390, 10));
+        getContentPane().add(barra3, new org.netbeans.lib.awtextra.AbsoluteConstraints(787, 257, 390, 10));
 
         visible.setForeground(new java.awt.Color(255, 255, 255));
         visible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Visible.jpg"))); // NOI18N
@@ -76,7 +80,10 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         getContentPane().add(visible, new org.netbeans.lib.awtextra.AbsoluteConstraints(11010, 225, 30, 20));
 
         candado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Candado.png"))); // NOI18N
-        getContentPane().add(candado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 309, 20, 30));
+        getContentPane().add(candado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(787, 309, 20, 30));
+
+        barra4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra4, new org.netbeans.lib.awtextra.AbsoluteConstraints(787, 340, 390, 10));
 
         visible1.setForeground(new java.awt.Color(255, 255, 255));
         visible1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Visible.jpg"))); // NOI18N
@@ -88,10 +95,50 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
                 visible1ActionPerformed(evt);
             }
         });
-        getContentPane().add(visible1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 280, 30, 20));
+        getContentPane().add(visible1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 240, 30, 20));
 
-        barra4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
-        getContentPane().add(barra4, new org.netbeans.lib.awtextra.AbsoluteConstraints(761, 340, 390, 10));
+        noVisible.setForeground(new java.awt.Color(255, 255, 255));
+        noVisible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/noVisible.png"))); // NOI18N
+        noVisible.setBorder(null);
+        noVisible.setBorderPainted(false);
+        noVisible.setContentAreaFilled(false);
+        noVisible.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                noVisibleActionPerformed(evt);
+            }
+        });
+        getContentPane().add(noVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 240, 30, 20));
+
+        visible2.setForeground(new java.awt.Color(255, 255, 255));
+        visible2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Visible.jpg"))); // NOI18N
+        visible2.setBorder(null);
+        visible2.setBorderPainted(false);
+        visible2.setContentAreaFilled(false);
+        visible2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                visible2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(visible2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 322, 30, 20));
+
+        noVisible1.setForeground(new java.awt.Color(255, 255, 255));
+        noVisible1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/noVisible.png"))); // NOI18N
+        noVisible1.setBorder(null);
+        noVisible1.setBorderPainted(false);
+        noVisible1.setContentAreaFilled(false);
+        noVisible1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                noVisible1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(noVisible1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 322, 30, 20));
+
+        btnAceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Aceptar.png"))); // NOI18N
+        btnAceptar.setBorder(null);
+        btnAceptar.setBorderPainted(false);
+        btnAceptar.setContentAreaFilled(false);
+        btnAceptar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Aceptarsegundo.png"))); // NOI18N
+        getContentPane().add(btnAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(795, 541, 340, 50));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
@@ -101,12 +148,26 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
 
     private void visibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visibleActionPerformed
         visible.setVisible(false);
-        
+        /*no visible es lo que va aqui*/
     }//GEN-LAST:event_visibleActionPerformed
 
     private void visible1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visible1ActionPerformed
-        // TODO add your handling code here:
+        visible.setVisible(false);
+        noVisible.setVisible(true);
     }//GEN-LAST:event_visible1ActionPerformed
+
+    private void noVisibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noVisibleActionPerformed
+        noVisible.setVisible(false);
+        visible.setVisible(true);
+    }//GEN-LAST:event_noVisibleActionPerformed
+
+    private void visible2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visible2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_visible2ActionPerformed
+
+    private void noVisible1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noVisible1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_noVisible1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,13 +208,17 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
     private javax.swing.JLabel BG;
     private javax.swing.JLabel barra3;
     private javax.swing.JLabel barra4;
+    private javax.swing.JButton btnAceptar;
     private javax.swing.JButton btnRegresar;
     private javax.swing.JLabel cambiar_contraseña;
     private javax.swing.JLabel candado1;
     private javax.swing.JLabel candado2;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel logo_pequeño;
+    private javax.swing.JButton noVisible;
+    private javax.swing.JButton noVisible1;
     private javax.swing.JButton visible;
     private javax.swing.JButton visible1;
+    private javax.swing.JButton visible2;
     // End of variables declaration//GEN-END:variables
 }

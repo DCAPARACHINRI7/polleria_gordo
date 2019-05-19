@@ -26,18 +26,55 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        btnSiguiente = new javax.swing.JButton();
+        barra7 = new javax.swing.JLabel();
+        correo1 = new javax.swing.JLabel();
+        verificaciondelcorreo = new javax.swing.JLabel();
+        btnRegresar = new javax.swing.JButton();
+        logo_pequeño = new javax.swing.JLabel();
+        BG = new javax.swing.JLabel();
+        texto = new javax.swing.JLabel();
+        fondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Siguiente.png"))); // NOI18N
+        btnSiguiente.setBorder(null);
+        btnSiguiente.setBorderPainted(false);
+        btnSiguiente.setContentAreaFilled(false);
+        btnSiguiente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_siguientesegundo.png"))); // NOI18N
+        getContentPane().add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(795, 541, 340, 50));
+
+        barra7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra7, new org.netbeans.lib.awtextra.AbsoluteConstraints(795, 393, 410, 10));
+
+        correo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Codigo.png"))); // NOI18N
+        getContentPane().add(correo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(795, 370, 30, 30));
+
+        verificaciondelcorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/verificaciondelcorreo.png"))); // NOI18N
+        getContentPane().add(verificaciondelcorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(771, 19, 380, 40));
+
+        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
+        btnRegresar.setBorder(null);
+        btnRegresar.setBorderPainted(false);
+        btnRegresar.setContentAreaFilled(false);
+        btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
+        getContentPane().add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, 40, 40));
+
+        logo_pequeño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Logo_BG.png"))); // NOI18N
+        getContentPane().add(logo_pequeño, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 4, 90, 70));
+
+        BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG.png"))); // NOI18N
+        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, -3, 640, 80));
+
+        texto.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
+        texto.setForeground(new java.awt.Color(135, 135, 135));
+        texto.setText("Se le enviará un código al correo ingresado anteriormente:");
+        getContentPane().add(texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 140, 610, 40));
+
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -78,5 +115,14 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BG;
+    private javax.swing.JLabel barra7;
+    private javax.swing.JButton btnRegresar;
+    private javax.swing.JButton btnSiguiente;
+    private javax.swing.JLabel correo1;
+    private javax.swing.JLabel fondo;
+    private javax.swing.JLabel logo_pequeño;
+    private javax.swing.JLabel texto;
+    private javax.swing.JLabel verificaciondelcorreo;
     // End of variables declaration//GEN-END:variables
 }

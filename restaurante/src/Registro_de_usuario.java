@@ -47,10 +47,10 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         correo1 = new javax.swing.JLabel();
         barra7 = new javax.swing.JLabel();
         btnAceptar = new javax.swing.JButton();
+        olvidemicontraseña = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
@@ -139,8 +139,18 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         btnAceptar.setBorder(null);
         btnAceptar.setBorderPainted(false);
         btnAceptar.setContentAreaFilled(false);
-        btnAceptar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_IngresarSecundario.png"))); // NOI18N
+        btnAceptar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Aceptarsegundo.png"))); // NOI18N
         getContentPane().add(btnAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(795, 624, 340, 50));
+
+        olvidemicontraseña.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        olvidemicontraseña.setForeground(new java.awt.Color(168, 12, 17));
+        olvidemicontraseña.setText("Acepta los términos y condiciones");
+        olvidemicontraseña.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                olvidemicontraseñaMouseClicked(evt);
+            }
+        });
+        getContentPane().add(olvidemicontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 574, 280, 20));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -157,6 +167,11 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         noVisible.setVisible(false);
         visible.setVisible(true);
     }//GEN-LAST:event_noVisibleActionPerformed
+
+    private void olvidemicontraseñaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_olvidemicontraseñaMouseClicked
+
+        /*A qui se colocara a donde se quiere mandar*/
+    }//GEN-LAST:event_olvidemicontraseñaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -213,6 +228,7 @@ public class Registro_de_usuario extends javax.swing.JFrame {
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel logo_pequeño;
     private javax.swing.JButton noVisible;
+    private javax.swing.JLabel olvidemicontraseña;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel usuario;
     private javax.swing.JButton visible;

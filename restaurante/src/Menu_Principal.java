@@ -44,6 +44,7 @@ public class Menu_Principal extends javax.swing.JFrame {
         lbresumendiario2 = new javax.swing.JLabel();
         btnresuemnDiario = new javax.swing.JButton();
         lbresumendiario1 = new javax.swing.JLabel();
+        logo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -159,6 +160,9 @@ public class Menu_Principal extends javax.swing.JFrame {
         lbresumendiario1.setText("Clientes");
         jPanel2.add(lbresumendiario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 337, 110, 40));
 
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo_menu.png"))); // NOI18N
+        jPanel2.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 601, 140, 110));
+
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 720));
 
         pack();
@@ -225,6 +229,7 @@ public class Menu_Principal extends javax.swing.JFrame {
     private javax.swing.JLabel lbresumendiario1;
     private javax.swing.JLabel lbresumendiario2;
     private javax.swing.JLabel lbresumendiario3;
+    private javax.swing.JLabel logo;
     private javax.swing.JButton personal;
     // End of variables declaration//GEN-END:variables
 }

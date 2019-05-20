@@ -30,14 +30,20 @@ public class Menu_Principal extends javax.swing.JFrame {
         btnHerramienta = new javax.swing.JButton();
         btnCerrar = new javax.swing.JButton();
         btnMinimisar = new javax.swing.JButton();
+        btnalmacen = new javax.swing.JButton();
+        cupones1 = new javax.swing.JLabel();
+        btncupones = new javax.swing.JButton();
+        cupones = new javax.swing.JLabel();
+        btnplatillo = new javax.swing.JButton();
+        lbresumendiario3 = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
         barra = new javax.swing.JLabel();
+        lbresumendiario = new javax.swing.JLabel();
         personal = new javax.swing.JButton();
         btncliente = new javax.swing.JButton();
         lbresumendiario2 = new javax.swing.JLabel();
         btnresuemnDiario = new javax.swing.JButton();
         lbresumendiario1 = new javax.swing.JLabel();
-        lbresumendiario = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -67,6 +73,49 @@ public class Menu_Principal extends javax.swing.JFrame {
         btnMinimisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizarsegundo.png"))); // NOI18N
         jPanel2.add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1136, 10, 40, 40));
 
+        btnalmacen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/alamacen.png"))); // NOI18N
+        btnalmacen.setBorder(null);
+        btnalmacen.setBorderPainted(false);
+        btnalmacen.setContentAreaFilled(false);
+        btnalmacen.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/almacen_segundo.png"))); // NOI18N
+        btnalmacen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnalmacenActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnalmacen, new org.netbeans.lib.awtextra.AbsoluteConstraints(978, 419, 160, 160));
+
+        cupones1.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
+        cupones1.setText("Almacen");
+        jPanel2.add(cupones1, new org.netbeans.lib.awtextra.AbsoluteConstraints(994, 580, 130, 40));
+
+        btncupones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cupones.png"))); // NOI18N
+        btncupones.setBorder(null);
+        btncupones.setBorderPainted(false);
+        btncupones.setContentAreaFilled(false);
+        btncupones.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cupones_segundo.png"))); // NOI18N
+        btncupones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncuponesActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btncupones, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 420, 160, 160));
+
+        cupones.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
+        cupones.setText("Cupones");
+        jPanel2.add(cupones, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 580, 130, 40));
+
+        btnplatillo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/platillos.png"))); // NOI18N
+        btnplatillo.setBorder(null);
+        btnplatillo.setBorderPainted(false);
+        btnplatillo.setContentAreaFilled(false);
+        btnplatillo.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/platillos_segundo.png"))); // NOI18N
+        jPanel2.add(btnplatillo, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 419, 160, 160));
+
+        lbresumendiario3.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
+        lbresumendiario3.setText("Platillo");
+        jPanel2.add(lbresumendiario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 590, 90, 40));
+
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_SalirBG.png"))); // NOI18N
         btnRegresar.setBorder(null);
         btnRegresar.setBorderPainted(false);
@@ -76,6 +125,10 @@ public class Menu_Principal extends javax.swing.JFrame {
 
         barra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG_grande.png"))); // NOI18N
         jPanel2.add(barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 58));
+
+        lbresumendiario.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
+        lbresumendiario.setText("Resumen Diario");
+        jPanel2.add(lbresumendiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 337, 210, 40));
 
         personal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/personal.png"))); // NOI18N
         personal.setBorder(null);
@@ -89,7 +142,7 @@ public class Menu_Principal extends javax.swing.JFrame {
         btncliente.setBorderPainted(false);
         btncliente.setContentAreaFilled(false);
         btncliente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/clientessecundario.png"))); // NOI18N
-        jPanel2.add(btncliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(565, 172, 160, 160));
+        jPanel2.add(btncliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 172, 160, 160));
 
         lbresumendiario2.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
         lbresumendiario2.setText("Personal");
@@ -104,16 +157,20 @@ public class Menu_Principal extends javax.swing.JFrame {
 
         lbresumendiario1.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
         lbresumendiario1.setText("Clientes");
-        jPanel2.add(lbresumendiario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 337, 110, 40));
-
-        lbresumendiario.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
-        lbresumendiario.setText("Resumen Diario");
-        jPanel2.add(lbresumendiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 337, 210, 40));
+        jPanel2.add(lbresumendiario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 337, 110, 40));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btncuponesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncuponesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btncuponesActionPerformed
+
+    private void btnalmacenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnalmacenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnalmacenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,12 +213,18 @@ public class Menu_Principal extends javax.swing.JFrame {
     private javax.swing.JButton btnHerramienta;
     private javax.swing.JButton btnMinimisar;
     private javax.swing.JButton btnRegresar;
+    private javax.swing.JButton btnalmacen;
     private javax.swing.JButton btncliente;
+    private javax.swing.JButton btncupones;
+    private javax.swing.JButton btnplatillo;
     private javax.swing.JButton btnresuemnDiario;
+    private javax.swing.JLabel cupones;
+    private javax.swing.JLabel cupones1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lbresumendiario;
     private javax.swing.JLabel lbresumendiario1;
     private javax.swing.JLabel lbresumendiario2;
+    private javax.swing.JLabel lbresumendiario3;
     private javax.swing.JButton personal;
     // End of variables declaration//GEN-END:variables
 }

@@ -32,11 +32,17 @@ public class Menu_Principal extends javax.swing.JFrame {
         btnMinimisar = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
         barra = new javax.swing.JLabel();
-        btnRegresar4 = new javax.swing.JButton();
+        personal = new javax.swing.JButton();
+        btncliente = new javax.swing.JButton();
+        lbresumendiario2 = new javax.swing.JLabel();
+        btnresuemnDiario = new javax.swing.JButton();
+        lbresumendiario1 = new javax.swing.JLabel();
+        lbresumendiario = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnHerramienta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Configurar.png"))); // NOI18N
@@ -44,38 +50,65 @@ public class Menu_Principal extends javax.swing.JFrame {
         btnHerramienta.setBorderPainted(false);
         btnHerramienta.setContentAreaFilled(false);
         btnHerramienta.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Configurarsegundo.png"))); // NOI18N
-        jPanel2.add(btnHerramienta, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, 40, 40));
+        jPanel2.add(btnHerramienta, new org.netbeans.lib.awtextra.AbsoluteConstraints(1053, 10, 40, 40));
 
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Cerrar.png"))); // NOI18N
+        btnCerrar.setAutoscrolls(true);
         btnCerrar.setBorder(null);
         btnCerrar.setBorderPainted(false);
         btnCerrar.setContentAreaFilled(false);
         btnCerrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Cerrarsegundo.png"))); // NOI18N
-        jPanel2.add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 10, 40, 40));
+        jPanel2.add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 10, 40, 40));
 
         btnMinimisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizar.png"))); // NOI18N
         btnMinimisar.setBorder(null);
         btnMinimisar.setBorderPainted(false);
         btnMinimisar.setContentAreaFilled(false);
         btnMinimisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizarsegundo.png"))); // NOI18N
-        jPanel2.add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 10, 40, 40));
+        jPanel2.add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1136, 10, 40, 40));
 
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_SalirBG.png"))); // NOI18N
         btnRegresar.setBorder(null);
         btnRegresar.setBorderPainted(false);
         btnRegresar.setContentAreaFilled(false);
         btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Salirsegundo.png"))); // NOI18N
-        jPanel2.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 40, 40));
+        jPanel2.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 10, 40, 40));
 
         barra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG_grande.png"))); // NOI18N
         jPanel2.add(barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 58));
 
-        btnRegresar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
-        btnRegresar4.setBorder(null);
-        btnRegresar4.setBorderPainted(false);
-        btnRegresar4.setContentAreaFilled(false);
-        btnRegresar4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
-        jPanel2.add(btnRegresar4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 40, 40));
+        personal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/personal.png"))); // NOI18N
+        personal.setBorder(null);
+        personal.setBorderPainted(false);
+        personal.setContentAreaFilled(false);
+        personal.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/personal_segundo.png"))); // NOI18N
+        jPanel2.add(personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(978, 172, 140, 160));
+
+        btncliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/clientes.png"))); // NOI18N
+        btncliente.setBorder(null);
+        btncliente.setBorderPainted(false);
+        btncliente.setContentAreaFilled(false);
+        btncliente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/clientessecundario.png"))); // NOI18N
+        jPanel2.add(btncliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(565, 172, 160, 160));
+
+        lbresumendiario2.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
+        lbresumendiario2.setText("Personal");
+        jPanel2.add(lbresumendiario2, new org.netbeans.lib.awtextra.AbsoluteConstraints(994, 337, 120, 40));
+
+        btnresuemnDiario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/resumendiario.png"))); // NOI18N
+        btnresuemnDiario.setBorder(null);
+        btnresuemnDiario.setBorderPainted(false);
+        btnresuemnDiario.setContentAreaFilled(false);
+        btnresuemnDiario.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/resumendiario_segundo.png"))); // NOI18N
+        jPanel2.add(btnresuemnDiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 172, 160, 160));
+
+        lbresumendiario1.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
+        lbresumendiario1.setText("Clientes");
+        jPanel2.add(lbresumendiario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 337, 110, 40));
+
+        lbresumendiario.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
+        lbresumendiario.setText("Resumen Diario");
+        jPanel2.add(lbresumendiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 337, 210, 40));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 720));
 
@@ -123,7 +156,12 @@ public class Menu_Principal extends javax.swing.JFrame {
     private javax.swing.JButton btnHerramienta;
     private javax.swing.JButton btnMinimisar;
     private javax.swing.JButton btnRegresar;
-    private javax.swing.JButton btnRegresar4;
+    private javax.swing.JButton btncliente;
+    private javax.swing.JButton btnresuemnDiario;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel lbresumendiario;
+    private javax.swing.JLabel lbresumendiario1;
+    private javax.swing.JLabel lbresumendiario2;
+    private javax.swing.JButton personal;
     // End of variables declaration//GEN-END:variables
 }

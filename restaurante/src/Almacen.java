@@ -8,12 +8,12 @@
  *
  * @author David
  */
-public class Clientes extends javax.swing.JFrame {
+public class Almacen extends javax.swing.JFrame {
 
     /**
-     * Creates new form Clientes
+     * Creates new form Almacen
      */
-    public Clientes() {
+    public Almacen() {
         initComponents();
     }
 
@@ -29,14 +29,15 @@ public class Clientes extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnRegresar = new javax.swing.JButton();
         id = new javax.swing.JLabel();
-        cliente = new javax.swing.JLabel();
-        nombre = new javax.swing.JLabel();
-        apellido = new javax.swing.JLabel();
-        correo_electronico = new javax.swing.JLabel();
-        fecha_de_nacimiento = new javax.swing.JLabel();
-        numero_de_celular = new javax.swing.JLabel();
+        cupones = new javax.swing.JLabel();
+        titulo = new javax.swing.JLabel();
+        stock = new javax.swing.JLabel();
+        descuento = new javax.swing.JLabel();
+        valido = new javax.swing.JLabel();
+        fechadecreacion = new javax.swing.JLabel();
         utilizado = new javax.swing.JLabel();
-        ulti_vista = new javax.swing.JLabel();
+        fechadeuso1 = new javax.swing.JLabel();
+        fechadeuso = new javax.swing.JLabel();
         btnMinimisar = new javax.swing.JButton();
         btn = new javax.swing.JButton();
         btnmodificar = new javax.swing.JButton();
@@ -62,36 +63,40 @@ public class Clientes extends javax.swing.JFrame {
         id.setText("ID:");
         jPanel1.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 108, 30, 20));
 
-        cliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cliente.png"))); // NOI18N
-        jPanel1.add(cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 17, 160, 30));
+        cupones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/titulo_cupones.png"))); // NOI18N
+        jPanel1.add(cupones, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 17, 160, 30));
 
-        nombre.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        nombre.setText("Nombres:");
-        jPanel1.add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 158, 80, 20));
+        titulo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        titulo.setText("Título:");
+        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 158, 50, 20));
 
-        apellido.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        apellido.setText("Apellidos:");
-        jPanel1.add(apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 208, 80, 20));
+        stock.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        stock.setText("Stock:");
+        jPanel1.add(stock, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 208, 50, 20));
 
-        correo_electronico.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        correo_electronico.setText("Correo Electrónico:");
-        jPanel1.add(correo_electronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 158, 150, 20));
+        descuento.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        descuento.setText("Descuento de:");
+        jPanel1.add(descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 158, 120, 20));
 
-        fecha_de_nacimiento.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        fecha_de_nacimiento.setText("Fecha de Nacimiento:");
-        jPanel1.add(fecha_de_nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 108, 170, 20));
+        valido.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        valido.setText("Valido para:");
+        jPanel1.add(valido, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 108, 100, 20));
 
-        numero_de_celular.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        numero_de_celular.setText("Número de celular:");
-        jPanel1.add(numero_de_celular, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 208, 150, 20));
+        fechadecreacion.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        fechadecreacion.setText("Fecha de Creación");
+        jPanel1.add(fechadecreacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 208, 150, 20));
 
         utilizado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        utilizado.setText("Fecha de registro:");
-        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 108, 150, 20));
+        utilizado.setText("Utilizado por:");
+        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 108, 110, 20));
 
-        ulti_vista.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        ulti_vista.setText("Ultima vista:");
-        jPanel1.add(ulti_vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 158, 100, 20));
+        fechadeuso1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        fechadeuso1.setText("Fecha de Caducidad:");
+        jPanel1.add(fechadeuso1, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 208, 180, 20));
+
+        fechadeuso.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        fechadeuso.setText("Fecha de uso:");
+        jPanel1.add(fechadeuso, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 158, 110, 20));
 
         btnMinimisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizar.png"))); // NOI18N
         btnMinimisar.setBorder(null);
@@ -227,43 +232,44 @@ public class Clientes extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Almacen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Almacen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Almacen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Clientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Almacen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Clientes().setVisible(true);
+                new Almacen().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel apellido;
     private javax.swing.JButton btn;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnMinimisar;
     private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btnagregar;
     private javax.swing.JButton btnmodificar;
-    private javax.swing.JLabel cliente;
-    private javax.swing.JLabel correo_electronico;
-    private javax.swing.JLabel fecha_de_nacimiento;
+    private javax.swing.JLabel cupones;
+    private javax.swing.JLabel descuento;
+    private javax.swing.JLabel fechadecreacion;
+    private javax.swing.JLabel fechadeuso;
+    private javax.swing.JLabel fechadeuso1;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel id;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JLabel nombre;
-    private javax.swing.JLabel numero_de_celular;
-    private javax.swing.JLabel ulti_vista;
+    private javax.swing.JLabel stock;
+    private javax.swing.JLabel titulo;
     private javax.swing.JLabel utilizado;
+    private javax.swing.JLabel valido;
     // End of variables declaration//GEN-END:variables
 }

@@ -63,40 +63,40 @@ public class Almacen extends javax.swing.JFrame {
         id.setText("ID:");
         jPanel1.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 108, 30, 20));
 
-        cupones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/titulo_cupones.png"))); // NOI18N
-        jPanel1.add(cupones, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 17, 160, 30));
+        cupones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/almacen.png"))); // NOI18N
+        jPanel1.add(cupones, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 17, -1, 30));
 
         titulo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        titulo.setText("Título:");
-        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 158, 50, 20));
+        titulo.setText("Producto:");
+        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 158, 80, 20));
 
         stock.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        stock.setText("Stock:");
-        jPanel1.add(stock, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 208, 50, 20));
+        stock.setText("Categoria:");
+        jPanel1.add(stock, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 208, 90, 20));
 
         descuento.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        descuento.setText("Descuento de:");
-        jPanel1.add(descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 158, 120, 20));
+        descuento.setText("Celular:");
+        jPanel1.add(descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 158, 60, 20));
 
         valido.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        valido.setText("Valido para:");
-        jPanel1.add(valido, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 108, 100, 20));
+        valido.setText("Proveedor:");
+        jPanel1.add(valido, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 108, 90, 20));
 
         fechadecreacion.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        fechadecreacion.setText("Fecha de Creación");
+        fechadecreacion.setText("Correo Electrónico");
         jPanel1.add(fechadecreacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 208, 150, 20));
 
         utilizado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        utilizado.setText("Utilizado por:");
-        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 108, 110, 20));
+        utilizado.setText("Precio:");
+        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 108, 60, 20));
 
         fechadeuso1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        fechadeuso1.setText("Fecha de Caducidad:");
-        jPanel1.add(fechadeuso1, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 208, 180, 20));
+        fechadeuso1.setText("Unidad de Medida:");
+        jPanel1.add(fechadeuso1, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 208, 160, 20));
 
         fechadeuso.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        fechadeuso.setText("Fecha de uso:");
-        jPanel1.add(fechadeuso, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 158, 110, 20));
+        fechadeuso.setText("Cantidad:");
+        jPanel1.add(fechadeuso, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 158, 80, 20));
 
         btnMinimisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizar.png"))); // NOI18N
         btnMinimisar.setBorder(null);

@@ -26,12 +26,6 @@ public class Resumen_Diario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        ResumenDiario = new javax.swing.JLabel();
-        btnRegresar = new javax.swing.JButton();
-        btnCerrar = new javax.swing.JButton();
-        btnMinimisar = new javax.swing.JButton();
-        fondo1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         id = new javax.swing.JLabel();
@@ -43,9 +37,6 @@ public class Resumen_Diario extends javax.swing.JFrame {
         utilizado = new javax.swing.JLabel();
         fechadeuso1 = new javax.swing.JLabel();
         fechadeuso = new javax.swing.JLabel();
-        btn = new javax.swing.JButton();
-        btnmodificar = new javax.swing.JButton();
-        btnagregar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         valido1 = new javax.swing.JLabel();
@@ -54,44 +45,17 @@ public class Resumen_Diario extends javax.swing.JFrame {
         valido4 = new javax.swing.JLabel();
         valido5 = new javax.swing.JLabel();
         valido6 = new javax.swing.JLabel();
+        valido7 = new javax.swing.JLabel();
+        stock1 = new javax.swing.JLabel();
+        stock2 = new javax.swing.JLabel();
+        btnCerrar = new javax.swing.JButton();
+        ResumenDiario = new javax.swing.JLabel();
+        btnRegresar = new javax.swing.JButton();
+        btnMinimisar = new javax.swing.JButton();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        ResumenDiario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/resumen_diario_titulo.png"))); // NOI18N
-        jPanel2.add(ResumenDiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 17, -1, 30));
-
-        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
-        btnRegresar.setBorder(null);
-        btnRegresar.setBorderPainted(false);
-        btnRegresar.setContentAreaFilled(false);
-        btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
-        jPanel2.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 20, 40, 40));
-
-        btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Cerrar.png"))); // NOI18N
-        btnCerrar.setAutoscrolls(true);
-        btnCerrar.setBorder(null);
-        btnCerrar.setBorderPainted(false);
-        btnCerrar.setContentAreaFilled(false);
-        btnCerrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Cerrarsegundo.png"))); // NOI18N
-        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCerrarActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 20, 40, 40));
-
-        btnMinimisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizar.png"))); // NOI18N
-        btnMinimisar.setBorder(null);
-        btnMinimisar.setBorderPainted(false);
-        btnMinimisar.setContentAreaFilled(false);
-        btnMinimisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizarsegundo.png"))); // NOI18N
-        jPanel2.add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1136, 20, 40, 40));
-
-        fondo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG_grande.png"))); // NOI18N
-        jPanel2.add(fondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -101,76 +65,36 @@ public class Resumen_Diario extends javax.swing.JFrame {
         jPanel1.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 30, 20));
 
         titulo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        titulo.setText("Producto:");
-        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 80, 20));
+        titulo.setText("Día:");
+        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 30, 20));
 
         stock.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        stock.setText("Categoria:");
-        jPanel1.add(stock, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 90, 20));
+        stock.setText("Meseros Totales:");
+        jPanel1.add(stock, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 490, 140, 30));
 
         descuento.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        descuento.setText("Celular:");
-        jPanel1.add(descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, 60, 20));
+        descuento.setText("Patillos Totales:");
+        jPanel1.add(descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, 130, 20));
 
         valido.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         valido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Grupo 16.png"))); // NOI18N
         jPanel1.add(valido, new org.netbeans.lib.awtextra.AbsoluteConstraints(964, 60, 80, 80));
 
         fechadecreacion.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        fechadecreacion.setText("Correo Electrónico");
+        fechadecreacion.setText("Cocineros Totales:");
         jPanel1.add(fechadecreacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 440, 150, 20));
 
         utilizado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        utilizado.setText("Precio:");
-        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 340, 60, 30));
+        utilizado.setText("Insumos Gastados:");
+        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 340, 160, 30));
 
         fechadeuso1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        fechadeuso1.setText("Unidad de Medida:");
-        jPanel1.add(fechadeuso1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 440, 160, 20));
+        fechadeuso1.setText("por Cliente:");
+        jPanel1.add(fechadeuso1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 410, 100, 20));
 
         fechadeuso.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        fechadeuso.setText("Cantidad:");
-        jPanel1.add(fechadeuso, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 390, 80, 20));
-
-        btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_eliminar.png"))); // NOI18N
-        btn.setAutoscrolls(true);
-        btn.setBorder(null);
-        btn.setBorderPainted(false);
-        btn.setContentAreaFilled(false);
-        btn.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_eliminarsegundo.png"))); // NOI18N
-        btn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 420, -1, 30));
-
-        btnmodificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_modificar.png"))); // NOI18N
-        btnmodificar.setAutoscrolls(true);
-        btnmodificar.setBorder(null);
-        btnmodificar.setBorderPainted(false);
-        btnmodificar.setContentAreaFilled(false);
-        btnmodificar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_modificarsegundo.png"))); // NOI18N
-        btnmodificar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnmodificarActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnmodificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 380, -1, 30));
-
-        btnagregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_agregar.png"))); // NOI18N
-        btnagregar.setAutoscrolls(true);
-        btnagregar.setBorder(null);
-        btnagregar.setBorderPainted(false);
-        btnagregar.setContentAreaFilled(false);
-        btnagregar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_agregarsegundo.png"))); // NOI18N
-        btnagregar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnagregarActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnagregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 320, -1, 30));
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 1230, 420));
+        fechadeuso.setText("Gasto Promedio");
+        jPanel1.add(fechadeuso, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 390, 130, 20));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -183,19 +107,21 @@ public class Resumen_Diario extends javax.swing.JFrame {
 
             }
         ));
-        jPanel1.add(jTable1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jScrollPane1.setViewportView(jTable1);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, 1220, 460));
 
         valido1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        valido1.setText("Proveedor:");
-        jPanel1.add(valido1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, 90, 20));
+        valido1.setText("Total Clientes:");
+        jPanel1.add(valido1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, 130, 20));
 
         valido2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         valido2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Clientes_azul.png"))); // NOI18N
         jPanel1.add(valido2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1061, 50, 130, 40));
 
         valido3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        valido3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Grupo 15.png"))); // NOI18N
-        jPanel1.add(valido3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 60, -1, 70));
+        valido3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cuadro.png"))); // NOI18N
+        jPanel1.add(valido3, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 20, 180, 220));
 
         valido4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         valido4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Ingresos.png"))); // NOI18N
@@ -209,51 +135,57 @@ public class Resumen_Diario extends javax.swing.JFrame {
         valido6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Platillos_amarillo.png"))); // NOI18N
         jPanel1.add(valido6, new org.netbeans.lib.awtextra.AbsoluteConstraints(879, 180, 130, 40));
 
+        valido7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        valido7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Grupo 15.png"))); // NOI18N
+        jPanel1.add(valido7, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 60, -1, 70));
+
+        stock1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        stock1.setText("Ingresos:");
+        jPanel1.add(stock1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 90, 30));
+
+        stock2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        stock2.setText("Cargo:");
+        jPanel1.add(stock2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 60, 30));
+
         jScrollPane2.setViewportView(jPanel1);
 
-        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG_grande.png"))); // NOI18N
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1280, 650));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fondo)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1300, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(fondo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 632, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 649, Short.MAX_VALUE)))
-        );
+        btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Cerrar.png"))); // NOI18N
+        btnCerrar.setAutoscrolls(true);
+        btnCerrar.setBorder(null);
+        btnCerrar.setBorderPainted(false);
+        btnCerrar.setContentAreaFilled(false);
+        btnCerrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Cerrarsegundo.png"))); // NOI18N
+        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 20, 40, 40));
+
+        ResumenDiario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/resumen_diario_titulo.png"))); // NOI18N
+        getContentPane().add(ResumenDiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 20, -1, 30));
+
+        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
+        btnRegresar.setBorder(null);
+        btnRegresar.setBorderPainted(false);
+        btnRegresar.setContentAreaFilled(false);
+        btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
+        getContentPane().add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 20, 40, 40));
+
+        btnMinimisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizar.png"))); // NOI18N
+        btnMinimisar.setBorder(null);
+        btnMinimisar.setBorderPainted(false);
+        btnMinimisar.setContentAreaFilled(false);
+        btnMinimisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizarsegundo.png"))); // NOI18N
+        getContentPane().add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1136, 20, 40, 40));
+
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG_grande.png"))); // NOI18N
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnActionPerformed
-
-    private void btnmodificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmodificarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnmodificarActionPerformed
-
-    private void btnagregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnagregarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnagregarActionPerformed
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         // TODO add your handling code here:
@@ -296,25 +228,22 @@ public class Resumen_Diario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel ResumenDiario;
-    private javax.swing.JButton btn;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnMinimisar;
     private javax.swing.JButton btnRegresar;
-    private javax.swing.JButton btnagregar;
-    private javax.swing.JButton btnmodificar;
     private javax.swing.JLabel descuento;
     private javax.swing.JLabel fechadecreacion;
     private javax.swing.JLabel fechadeuso;
     private javax.swing.JLabel fechadeuso1;
     private javax.swing.JLabel fondo;
-    private javax.swing.JLabel fondo1;
     private javax.swing.JLabel id;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel stock;
+    private javax.swing.JLabel stock1;
+    private javax.swing.JLabel stock2;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel utilizado;
     private javax.swing.JLabel valido;
@@ -324,5 +253,6 @@ public class Resumen_Diario extends javax.swing.JFrame {
     private javax.swing.JLabel valido4;
     private javax.swing.JLabel valido5;
     private javax.swing.JLabel valido6;
+    private javax.swing.JLabel valido7;
     // End of variables declaration//GEN-END:variables
 }

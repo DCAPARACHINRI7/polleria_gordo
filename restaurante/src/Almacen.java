@@ -46,6 +46,15 @@ public class Almacen extends javax.swing.JFrame {
         fondo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        tf_Unidad_de_medida = new javax.swing.JTextField();
+        tf_Cantidad = new javax.swing.JTextField();
+        tf_Precio = new javax.swing.JTextField();
+        tf_CorreoElectronico = new javax.swing.JTextField();
+        tf_Celular = new javax.swing.JTextField();
+        tf_Proveedor = new javax.swing.JTextField();
+        tf_Producto = new javax.swing.JTextField();
+        tf_Categoria = new javax.swing.JTextField();
+        tf_id = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,7 +81,7 @@ public class Almacen extends javax.swing.JFrame {
 
         stock.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         stock.setText("Categoria:");
-        jPanel1.add(stock, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 208, 90, 20));
+        jPanel1.add(stock, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 208, 90, 30));
 
         descuento.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         descuento.setText("Celular:");
@@ -83,7 +92,7 @@ public class Almacen extends javax.swing.JFrame {
         jPanel1.add(valido, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 108, 90, 20));
 
         fechadecreacion.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        fechadecreacion.setText("Correo Electrónico");
+        fechadecreacion.setText("Correo Electrónico:");
         jPanel1.add(fechadecreacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 208, 150, 20));
 
         utilizado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -175,6 +184,69 @@ public class Almacen extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 1260, 450));
 
+        tf_Unidad_de_medida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_Unidad_de_medidaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_Unidad_de_medida, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 200, 210, 30));
+
+        tf_Cantidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_CantidadActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_Cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 150, 210, 30));
+
+        tf_Precio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_PrecioActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_Precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 100, 210, 30));
+
+        tf_CorreoElectronico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_CorreoElectronicoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_CorreoElectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 200, 210, 30));
+
+        tf_Celular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_CelularActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_Celular, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, 210, 30));
+
+        tf_Proveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_ProveedorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_Proveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, 210, 30));
+
+        tf_Producto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_ProductoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_Producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 210, 30));
+
+        tf_Categoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_CategoriaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_Categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 202, 210, 30));
+
+        tf_id.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_idActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 98, 130, 30));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -214,6 +286,42 @@ public class Almacen extends javax.swing.JFrame {
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void tf_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_idActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_idActionPerformed
+
+    private void tf_ProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_ProveedorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_ProveedorActionPerformed
+
+    private void tf_PrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_PrecioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_PrecioActionPerformed
+
+    private void tf_ProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_ProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_ProductoActionPerformed
+
+    private void tf_CategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_CategoriaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_CategoriaActionPerformed
+
+    private void tf_CelularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_CelularActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_CelularActionPerformed
+
+    private void tf_CorreoElectronicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_CorreoElectronicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_CorreoElectronicoActionPerformed
+
+    private void tf_Unidad_de_medidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_Unidad_de_medidaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_Unidad_de_medidaActionPerformed
+
+    private void tf_CantidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_CantidadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_CantidadActionPerformed
 
     /**
      * @param args the command line arguments
@@ -268,6 +376,15 @@ public class Almacen extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel stock;
+    private javax.swing.JTextField tf_Cantidad;
+    private javax.swing.JTextField tf_Categoria;
+    private javax.swing.JTextField tf_Celular;
+    private javax.swing.JTextField tf_CorreoElectronico;
+    private javax.swing.JTextField tf_Precio;
+    private javax.swing.JTextField tf_Producto;
+    private javax.swing.JTextField tf_Proveedor;
+    private javax.swing.JTextField tf_Unidad_de_medida;
+    private javax.swing.JTextField tf_id;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel utilizado;
     private javax.swing.JLabel valido;

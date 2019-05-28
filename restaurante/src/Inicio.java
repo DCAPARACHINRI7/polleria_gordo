@@ -1,3 +1,8 @@
+
+import java.awt.Color;
+
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,6 +20,10 @@ public class Inicio extends javax.swing.JFrame {
      */
     public Inicio() {
         initComponents();
+        tf_Usuario.setBackground(new Color(255,255,255));
+        TextPrompt usuario=new TextPrompt("Ingrese su Usuario", tf_Usuario);
+        jp_contrace.setBackground(new Color(255,255,255));
+        TextPrompt contra=new TextPrompt("Ingrese su contraseña", jp_contrace);
     }
 
     /**
@@ -37,8 +46,8 @@ public class Inicio extends javax.swing.JFrame {
         ingresar = new javax.swing.JButton();
         regustrar = new javax.swing.JButton();
         olvidemicontraseña1 = new javax.swing.JLabel();
-        tf_Contraseña = new javax.swing.JTextField();
         tf_Usuario = new javax.swing.JTextField();
+        jp_contrace = new javax.swing.JPasswordField();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -117,19 +126,19 @@ public class Inicio extends javax.swing.JFrame {
         });
         getContentPane().add(olvidemicontraseña1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 414, 160, 20));
 
-        tf_Contraseña.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tf_ContraseñaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(tf_Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 360, 260, 40));
-
         tf_Usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_UsuarioActionPerformed(evt);
             }
         });
         getContentPane().add(tf_Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 290, 290, 40));
+
+        jp_contrace.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jp_contraceActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jp_contrace, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 360, 260, 40));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -161,9 +170,9 @@ public class Inicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_UsuarioActionPerformed
 
-    private void tf_ContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_ContraseñaActionPerformed
+    private void jp_contraceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jp_contraceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tf_ContraseñaActionPerformed
+    }//GEN-LAST:event_jp_contraceActionPerformed
 
     /**
      * @param args the command line arguments
@@ -206,12 +215,12 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel candado;
     private javax.swing.JLabel fondo;
     private javax.swing.JButton ingresar;
+    private javax.swing.JPasswordField jp_contrace;
     private javax.swing.JLabel logo;
     private javax.swing.JButton noVisible;
     private javax.swing.JLabel olvidemicontraseña;
     private javax.swing.JLabel olvidemicontraseña1;
     private javax.swing.JButton regustrar;
-    private javax.swing.JTextField tf_Contraseña;
     private javax.swing.JTextField tf_Usuario;
     private javax.swing.JLabel usuario;
     private javax.swing.JButton visible;

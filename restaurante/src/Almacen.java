@@ -1,3 +1,6 @@
+
+import java.awt.Color;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,6 +18,10 @@ public class Almacen extends javax.swing.JFrame {
      */
     public Almacen() {
         initComponents();
+        tf_id.setBackground(new Color(255,255,255));
+        TextPrompt id=new TextPrompt("Ingrese su Usuario", tf_id);
+        tf_Producto.setBackground(new Color(255,255,255));
+        TextPrompt producto=new TextPrompt("Ingrese su producto", tf_Producto);
     }
 
     /**
@@ -245,7 +252,7 @@ public class Almacen extends javax.swing.JFrame {
                 tf_idActionPerformed(evt);
             }
         });
-        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 98, 130, 30));
+        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 210, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

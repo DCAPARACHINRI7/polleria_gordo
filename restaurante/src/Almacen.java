@@ -18,10 +18,17 @@ public class Almacen extends javax.swing.JFrame {
      */
     public Almacen() {
         initComponents();
-        tf_id.setBackground(new Color(255,255,255));
-        TextPrompt id=new TextPrompt("Ingrese su Usuario", tf_id);
-        tf_Producto.setBackground(new Color(255,255,255));
-        TextPrompt producto=new TextPrompt("Ingrese su producto", tf_Producto);
+        //tf_id.setBackground(new Color(255,255,255));
+        TextPrompt id=new TextPrompt("Ingrese su ID", tf_id);//ID
+        //tf_Producto.setBackground(new Color(255,255,255));
+        TextPrompt producto=new TextPrompt("Ingrese su producto", tf_Producto);//PRODUCTO
+        TextPrompt categoria=new TextPrompt("Ingrese a la categoria que pertenece", tf_Categoria);//CATEGORIA
+        TextPrompt proveedor=new TextPrompt("Ingrese su proveedor", tf_Proveedor);//PROVEEDOR
+        TextPrompt celular=new TextPrompt("Ingrese su N° de celular", tf_Celular);//CELULAR
+        TextPrompt correo=new TextPrompt("Ingrese su correo electronico", tf_CorreoElectronico);//CORREO ELECTRONICO
+        TextPrompt precio=new TextPrompt("Ingrese el precio del producto", tf_Precio);//PRECIO
+        TextPrompt calidad=new TextPrompt("Ingrese la cantidad", tf_Cantidad);//CANTIDAD
+        TextPrompt medida=new TextPrompt("Ingrese la unidad de medida", tf_Unidad_de_medida);//UNIDAD DE MEDIDA
     }
 
     /**

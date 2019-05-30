@@ -15,6 +15,12 @@ public class Platillos extends javax.swing.JFrame {
      */
     public Platillos() {
         initComponents();
+        TextPrompt IDE = new TextPrompt("Ingrese si ID", tf_id);//ID
+        TextPrompt nombre = new TextPrompt("Ingrese su nombre", tf_nombre);//ID
+        TextPrompt cocineros = new TextPrompt("Cantidad de cocineros", tf_cocinero);//ID
+        TextPrompt categoria = new TextPrompt("Ingrese su Categoria", tf_categoria);//CATEGORIA
+        TextPrompt precio = new TextPrompt("Ingrese el precio", tf_precio);//PRECIO
+        TextPrompt descripcion = new TextPrompt("Ingrese su Descripcion", tf_descripcion);//DESCRIPCION
     }
 
     /**
@@ -45,6 +51,14 @@ public class Platillos extends javax.swing.JFrame {
         fondo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        tf_id = new javax.swing.JTextField();
+        tf_cocinero = new javax.swing.JTextField();
+        tf_descripcion = new javax.swing.JTextField();
+        tf_ventas = new javax.swing.JTextField();
+        tf_precio = new javax.swing.JTextField();
+        tf_insumos = new javax.swing.JTextField();
+        tf_categoria = new javax.swing.JTextField();
+        tf_nombre = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -86,7 +100,7 @@ public class Platillos extends javax.swing.JFrame {
         jPanel1.add(fechadecreacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 208, 80, 20));
 
         utilizado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        utilizado.setText("Descripción");
+        utilizado.setText("Descripción:");
         jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 108, 100, 20));
 
         fechadeuso.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -170,25 +184,44 @@ public class Platillos extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 1260, 450));
 
+        tf_id.setBorder(null);
+        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 105, 270, 30));
+
+        tf_cocinero.setBorder(null);
+        jPanel1.add(tf_cocinero, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 150, 300, 30));
+
+        tf_descripcion.setBorder(null);
+        jPanel1.add(tf_descripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 100, 300, 30));
+
+        tf_ventas.setBorder(null);
+        jPanel1.add(tf_ventas, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 250, 30));
+
+        tf_precio.setBorder(null);
+        jPanel1.add(tf_precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, 300, 30));
+
+        tf_insumos.setBorder(null);
+        jPanel1.add(tf_insumos, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, 280, 30));
+
+        tf_categoria.setBorder(null);
+        jPanel1.add(tf_categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 250, 30));
+
+        tf_nombre.setBorder(null);
+        jPanel1.add(tf_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 260, 30));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1280, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -262,6 +295,14 @@ public class Platillos extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel stock;
+    private javax.swing.JTextField tf_categoria;
+    private javax.swing.JTextField tf_cocinero;
+    private javax.swing.JTextField tf_descripcion;
+    private javax.swing.JTextField tf_id;
+    private javax.swing.JTextField tf_insumos;
+    private javax.swing.JTextField tf_nombre;
+    private javax.swing.JTextField tf_precio;
+    private javax.swing.JTextField tf_ventas;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel utilizado;
     private javax.swing.JLabel valido;

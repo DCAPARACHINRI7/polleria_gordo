@@ -3,12 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Almacen.java</file>
+            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Platillos.java</file>
+            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Registro_de_usuario.java</file>
+            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Cupones.java</file>
+            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Resumen_Diario.java</file>
+            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Splash_Screen.java</file>
+            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Clientes.java</file>
             <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/TextPrompt.java</file>
             <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Inicio.java</file>
-            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Cupones.java</file>
-            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Clientes.java</file>
-            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Resumen_Diario.java</file>
+            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Almacen.java</file>
+            <file>file:/C:/Users/David/Desktop/polleria_gordo/restaurante/src/Menu_Principal.java</file>
         </group>
     </open-files>
 </project-private>

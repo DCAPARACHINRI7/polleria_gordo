@@ -240,6 +240,7 @@ public class Almacen extends javax.swing.JFrame {
         });
         jPanel1.add(tf_Proveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, 210, 30));
 
+        tf_Producto.setBorder(null);
         tf_Producto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_ProductoActionPerformed(evt);
@@ -254,6 +255,7 @@ public class Almacen extends javax.swing.JFrame {
         });
         jPanel1.add(tf_Categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 202, 210, 30));
 
+        tf_id.setBorder(null);
         tf_id.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_idActionPerformed(evt);

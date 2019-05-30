@@ -15,6 +15,7 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
      */
     public Verificación_del_correo_2() {
         initComponents();
+        TextPrompt codigo=new TextPrompt("Ingrese su código", tf_codigo);
     }
 
     /**
@@ -34,7 +35,9 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
         btnRegresar = new javax.swing.JButton();
         logo_pequeño = new javax.swing.JLabel();
         BG = new javax.swing.JLabel();
+        texto1 = new javax.swing.JLabel();
         texto = new javax.swing.JLabel();
+        tf_codigo = new javax.swing.JTextField();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -79,10 +82,20 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
         BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG.png"))); // NOI18N
         getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, -3, 640, 80));
 
+        texto1.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
+        texto1.setForeground(new java.awt.Color(135, 135, 135));
+        texto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        texto1.setText("ingresado anteriormente:");
+        getContentPane().add(texto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 170, 260, 40));
+
         texto.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         texto.setForeground(new java.awt.Color(135, 135, 135));
-        texto.setText("Se le enviará un código al correo ingresado anteriormente:");
-        getContentPane().add(texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 140, 610, 40));
+        texto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        texto.setText("Se le enviará un código al correo ");
+        getContentPane().add(texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 140, 330, 40));
+
+        tf_codigo.setBorder(null);
+        getContentPane().add(tf_codigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 360, 320, 40));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -140,6 +153,8 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
     private javax.swing.JLabel logo_pequeño;
     private javax.swing.JLabel olvidemicontraseña;
     private javax.swing.JLabel texto;
+    private javax.swing.JLabel texto1;
+    private javax.swing.JTextField tf_codigo;
     private javax.swing.JLabel verificaciondelcorreo;
     // End of variables declaration//GEN-END:variables
 }

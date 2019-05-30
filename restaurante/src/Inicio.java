@@ -126,6 +126,7 @@ public class Inicio extends javax.swing.JFrame {
         });
         getContentPane().add(olvidemicontraseña1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 414, 160, 20));
 
+        tf_Usuario.setBorder(null);
         tf_Usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_UsuarioActionPerformed(evt);
@@ -133,6 +134,7 @@ public class Inicio extends javax.swing.JFrame {
         });
         getContentPane().add(tf_Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 290, 290, 40));
 
+        jp_contrace.setBorder(null);
         jp_contrace.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jp_contraceActionPerformed(evt);

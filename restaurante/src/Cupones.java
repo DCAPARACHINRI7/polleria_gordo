@@ -15,6 +15,17 @@ public class Cupones extends javax.swing.JFrame {
      */
     public Cupones() {
         initComponents();
+        TextPrompt ID = new TextPrompt("Ingrese su ID", tf_id);//ID
+        TextPrompt titulo = new TextPrompt("Ingrese el titulo", tf_titulo);//TITULO
+//        TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
+  //      TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
+    //    TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
+      //  TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
+        //TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
+       // TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
+        //TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
+        //TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
+        
     }
 
     /**
@@ -46,6 +57,15 @@ public class Cupones extends javax.swing.JFrame {
         fondo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        tf_fecha_de_caducidad = new javax.swing.JTextField();
+        tf_id = new javax.swing.JTextField();
+        tf_titulo = new javax.swing.JTextField();
+        tf_stock = new javax.swing.JTextField();
+        tf_valido = new javax.swing.JTextField();
+        tf_descuento = new javax.swing.JTextField();
+        tf_fecha_de_creacion = new javax.swing.JTextField();
+        tf_utilizado = new javax.swing.JTextField();
+        tf_fecha_de_uso = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -175,7 +195,34 @@ public class Cupones extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 1260, 450));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 1260, 450));
+
+        tf_fecha_de_caducidad.setBorder(null);
+        jPanel1.add(tf_fecha_de_caducidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 200, 200, 30));
+
+        tf_id.setBorder(null);
+        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 260, 30));
+
+        tf_titulo.setBorder(null);
+        jPanel1.add(tf_titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 260, 30));
+
+        tf_stock.setBorder(null);
+        jPanel1.add(tf_stock, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 260, 30));
+
+        tf_valido.setBorder(null);
+        jPanel1.add(tf_valido, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 100, 260, 30));
+
+        tf_descuento.setBorder(null);
+        jPanel1.add(tf_descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 250, 30));
+
+        tf_fecha_de_creacion.setBorder(null);
+        jPanel1.add(tf_fecha_de_creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 200, 30));
+
+        tf_utilizado.setBorder(null);
+        jPanel1.add(tf_utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 100, 200, 30));
+
+        tf_fecha_de_uso.setBorder(null);
+        jPanel1.add(tf_fecha_de_uso, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 150, 200, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 720));
 
@@ -256,6 +303,15 @@ public class Cupones extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel stock;
+    private javax.swing.JTextField tf_descuento;
+    private javax.swing.JTextField tf_fecha_de_caducidad;
+    private javax.swing.JTextField tf_fecha_de_creacion;
+    private javax.swing.JTextField tf_fecha_de_uso;
+    private javax.swing.JTextField tf_id;
+    private javax.swing.JTextField tf_stock;
+    private javax.swing.JTextField tf_titulo;
+    private javax.swing.JTextField tf_utilizado;
+    private javax.swing.JTextField tf_valido;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel utilizado;
     private javax.swing.JLabel valido;

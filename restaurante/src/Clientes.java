@@ -15,6 +15,14 @@ public class Clientes extends javax.swing.JFrame {
      */
     public Clientes() {
         initComponents();
+        TextPrompt ID = new TextPrompt("Ingrese si ID", tf_id);//ID
+        TextPrompt nombre = new TextPrompt("Ingrese su nombre", tf_nombres);//NOMBRES
+        TextPrompt apellido = new TextPrompt("Ingrese su apellido", tf_apellido);//APELLIDO
+        TextPrompt fecha_nac = new TextPrompt("Ingrese su fecha_nacimiento", tf_Fecha_de_nacimiento);//FECHA DE NACIMIENTO
+        TextPrompt correo_electronico = new TextPrompt("Ingrese su correo electronico", tf_correoelectronico);//CORREO ELECTRONICO
+        TextPrompt numer_celular = new TextPrompt("Ingrese su numero de celular", tf_numCelular);//NUMERO DE CELULAR
+        TextPrompt ingrese_su_fecha_registro = new TextPrompt("Ingrese su fecha de registro", tf_Fecha_de_registro1);//FECHA DE REGISTRO
+        TextPrompt ultimaVista = new TextPrompt("Ingrese la ultima vista", tf_ultima_vista);//ULTIMA VISTA
     }
 
     /**
@@ -45,6 +53,14 @@ public class Clientes extends javax.swing.JFrame {
         fondo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        tf_numCelular = new javax.swing.JTextField();
+        tf_apellido = new javax.swing.JTextField();
+        tf_nombres = new javax.swing.JTextField();
+        tf_ultima_vista = new javax.swing.JTextField();
+        tf_id = new javax.swing.JTextField();
+        tf_Fecha_de_nacimiento = new javax.swing.JTextField();
+        tf_correoelectronico = new javax.swing.JTextField();
+        tf_Fecha_de_registro1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -87,7 +103,7 @@ public class Clientes extends javax.swing.JFrame {
 
         utilizado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         utilizado.setText("Fecha de registro:");
-        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 108, 150, 20));
+        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 108, 150, 30));
 
         ulti_vista.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         ulti_vista.setText("Ultima vista:");
@@ -170,6 +186,55 @@ public class Clientes extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 1260, 450));
 
+        tf_numCelular.setBorder(null);
+        tf_numCelular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_numCelularActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_numCelular, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 200, 190, 30));
+
+        tf_apellido.setBorder(null);
+        jPanel1.add(tf_apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 240, 30));
+
+        tf_nombres.setBorder(null);
+        jPanel1.add(tf_nombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 240, 30));
+
+        tf_ultima_vista.setBorder(null);
+        tf_ultima_vista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_ultima_vistaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_ultima_vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 150, 220, 30));
+
+        tf_id.setBorder(null);
+        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 270, 30));
+
+        tf_Fecha_de_nacimiento.setBorder(null);
+        tf_Fecha_de_nacimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_Fecha_de_nacimientoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_Fecha_de_nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, 190, 30));
+
+        tf_correoelectronico.setBorder(null);
+        tf_correoelectronico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_correoelectronicoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_correoelectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, 190, 30));
+
+        tf_Fecha_de_registro1.setBorder(null);
+        tf_Fecha_de_registro1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_Fecha_de_registro1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_Fecha_de_registro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 100, 220, 30));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -209,6 +274,26 @@ public class Clientes extends javax.swing.JFrame {
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void tf_correoelectronicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_correoelectronicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_correoelectronicoActionPerformed
+
+    private void tf_numCelularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_numCelularActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_numCelularActionPerformed
+
+    private void tf_Fecha_de_nacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_Fecha_de_nacimientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_Fecha_de_nacimientoActionPerformed
+
+    private void tf_ultima_vistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_ultima_vistaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_ultima_vistaActionPerformed
+
+    private void tf_Fecha_de_registro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_Fecha_de_registro1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_Fecha_de_registro1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -263,6 +348,14 @@ public class Clientes extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel nombre;
     private javax.swing.JLabel numero_de_celular;
+    private javax.swing.JTextField tf_Fecha_de_nacimiento;
+    private javax.swing.JTextField tf_Fecha_de_registro1;
+    private javax.swing.JTextField tf_apellido;
+    private javax.swing.JTextField tf_correoelectronico;
+    private javax.swing.JTextField tf_id;
+    private javax.swing.JTextField tf_nombres;
+    private javax.swing.JTextField tf_numCelular;
+    private javax.swing.JTextField tf_ultima_vista;
     private javax.swing.JLabel ulti_vista;
     private javax.swing.JLabel utilizado;
     // End of variables declaration//GEN-END:variables

@@ -210,6 +210,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="tf_Usuario">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tf_UsuarioActionPerformed"/>
       </Events>
@@ -220,6 +225,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JPasswordField" name="jp_contrace">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jp_contraceActionPerformed"/>
       </Events>

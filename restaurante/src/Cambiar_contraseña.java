@@ -15,6 +15,8 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
      */
     public Cambiar_contraseña() {
         initComponents();
+         TextPrompt nuevaContraseña=new TextPrompt("Ingrese una nueva contraseña", contrasena_nueva);//LA NUEVA CONTRASEÑA
+          TextPrompt repetirContraseña=new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
     }
 
     /**
@@ -32,7 +34,6 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         BG = new javax.swing.JLabel();
         candado1 = new javax.swing.JLabel();
         barra3 = new javax.swing.JLabel();
-        visible = new javax.swing.JButton();
         candado2 = new javax.swing.JLabel();
         barra4 = new javax.swing.JLabel();
         visible1 = new javax.swing.JButton();
@@ -40,6 +41,8 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         visible2 = new javax.swing.JButton();
         noVisible1 = new javax.swing.JButton();
         btnAceptar = new javax.swing.JButton();
+        contrasena_repetida = new javax.swing.JTextField();
+        contrasena_nueva = new javax.swing.JTextField();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,25 +62,13 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         getContentPane().add(logo_pequeño, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 0, 90, 70));
 
         BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG.png"))); // NOI18N
-        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, -4, 640, 80));
+        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, -3, 640, 80));
 
         candado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Candado.png"))); // NOI18N
         getContentPane().add(candado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(787, 224, 20, 30));
 
         barra3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
         getContentPane().add(barra3, new org.netbeans.lib.awtextra.AbsoluteConstraints(787, 257, 390, 10));
-
-        visible.setForeground(new java.awt.Color(255, 255, 255));
-        visible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Visible.jpg"))); // NOI18N
-        visible.setBorder(null);
-        visible.setBorderPainted(false);
-        visible.setContentAreaFilled(false);
-        visible.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                visibleActionPerformed(evt);
-            }
-        });
-        getContentPane().add(visible, new org.netbeans.lib.awtextra.AbsoluteConstraints(11010, 225, 30, 20));
 
         candado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Candado.png"))); // NOI18N
         getContentPane().add(candado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(787, 309, 20, 30));
@@ -140,25 +131,24 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         btnAceptar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Aceptarsegundo.png"))); // NOI18N
         getContentPane().add(btnAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(795, 541, 340, 50));
 
+        contrasena_repetida.setBorder(null);
+        getContentPane().add(contrasena_repetida, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 303, 290, 40));
+
+        contrasena_nueva.setBorder(null);
+        getContentPane().add(contrasena_nueva, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 220, 290, 40));
+
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
-        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void visibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visibleActionPerformed
-        visible.setVisible(false);
-        /*no visible es lo que va aqui*/
-    }//GEN-LAST:event_visibleActionPerformed
-
     private void visible1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visible1ActionPerformed
-        visible.setVisible(false);
-        noVisible.setVisible(true);
+      
     }//GEN-LAST:event_visible1ActionPerformed
 
     private void noVisibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noVisibleActionPerformed
-        noVisible.setVisible(false);
-        visible.setVisible(true);
+     
     }//GEN-LAST:event_noVisibleActionPerformed
 
     private void visible2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visible2ActionPerformed
@@ -213,11 +203,12 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
     private javax.swing.JLabel cambiar_contraseña;
     private javax.swing.JLabel candado1;
     private javax.swing.JLabel candado2;
+    private javax.swing.JTextField contrasena_nueva;
+    private javax.swing.JTextField contrasena_repetida;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel logo_pequeño;
     private javax.swing.JButton noVisible;
     private javax.swing.JButton noVisible1;
-    private javax.swing.JButton visible;
     private javax.swing.JButton visible1;
     private javax.swing.JButton visible2;
     // End of variables declaration//GEN-END:variables

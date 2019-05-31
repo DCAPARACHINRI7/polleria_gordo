@@ -23,6 +23,7 @@ public class Platillos extends javax.swing.JFrame {
         TextPrompt insumos = new TextPrompt("27/01/1999", tf_insumos);//INSUMOS
         TextPrompt diaventas = new TextPrompt("27/01/1999", tf_ventas);//CATEGORIA
         TextPrompt cocinero = new TextPrompt("27/01/1999", tf_cocinero);//CATEGORIA
+        this.setLocationRelativeTo(null); //CENTRANDO EL JFRAME
     }
 
     /**

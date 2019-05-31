@@ -21,6 +21,7 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         TextPrompt correo=new TextPrompt("Ingrese su Correo Electronico", tf_correo);
         TextPrompt contra=new TextPrompt("Ingrese su contraseña", tf_contra);
         TextPrompt numCelular=new TextPrompt("Ingrese su Numero de Celular", tf_num_celular);
+        this.setLocationRelativeTo(null); //CENTRANDO EL JFRAME
     }
 
     /**

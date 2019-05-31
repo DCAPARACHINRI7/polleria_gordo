@@ -23,6 +23,7 @@ public class Clientes extends javax.swing.JFrame {
         TextPrompt numer_celular = new TextPrompt("987654321", tf_numCelular);//NUMERO DE CELULAR
         TextPrompt ingrese_su_fecha_registro = new TextPrompt("13/05/2015", tf_Fecha_de_registro1);//FECHA DE REGISTRO
         TextPrompt ultimaVista = new TextPrompt("13/05/2019", tf_ultima_vista);//ULTIMA VISTA
+        this.setLocationRelativeTo(null); //CENTRANDO EL JFRAME
     }
 
     /**

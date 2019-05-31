@@ -6,7 +6,6 @@ import java.awt.Color;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author David
@@ -19,16 +18,17 @@ public class Almacen extends javax.swing.JFrame {
     public Almacen() {
         initComponents();
         //tf_id.setBackground(new Color(255,255,255));
-        TextPrompt id=new TextPrompt("010203040506070809", tf_id);//ID
+        TextPrompt id = new TextPrompt("010203040506070809", tf_id);//ID
         //tf_Producto.setBackground(new Color(255,255,255));
-        TextPrompt producto=new TextPrompt("Fideos", tf_Producto);//PRODUCTO
-        TextPrompt categoria=new TextPrompt("Pastas", tf_Categoria);//CATEGORIA
-        TextPrompt proveedor=new TextPrompt("Molitalia", tf_Proveedor);//PROVEEDOR
-        TextPrompt celular=new TextPrompt("986543210", tf_Celular);//CELULAR
-        TextPrompt correo=new TextPrompt("Molitalia@gmail.com", tf_CorreoElectronico);//CORREO ELECTRONICO
-        TextPrompt precio=new TextPrompt("S/.1204", tf_Precio);//PRECIO
-        TextPrompt calidad=new TextPrompt("1250", tf_Cantidad);//CANTIDAD
-        TextPrompt medida=new TextPrompt("5 Kg.", tf_Unidad_de_medida);//UNIDAD DE MEDIDA
+        TextPrompt producto = new TextPrompt("Fideos", tf_Producto);//PRODUCTO
+        TextPrompt categoria = new TextPrompt("Pastas", tf_Categoria);//CATEGORIA
+        TextPrompt proveedor = new TextPrompt("Molitalia", tf_Proveedor);//PROVEEDOR
+        TextPrompt celular = new TextPrompt("986543210", tf_Celular);//CELULAR
+        TextPrompt correo = new TextPrompt("Molitalia@gmail.com", tf_CorreoElectronico);//CORREO ELECTRONICO
+        TextPrompt precio = new TextPrompt("S/.1204", tf_Precio);//PRECIO
+        TextPrompt calidad = new TextPrompt("1250", tf_Cantidad);//CANTIDAD
+        TextPrompt medida = new TextPrompt("5 Kg.", tf_Unidad_de_medida);//UNIDAD DE MEDIDA
+        this.setLocationRelativeTo(null);//CENTRANDO EL JFRAME
     }
 
     /**

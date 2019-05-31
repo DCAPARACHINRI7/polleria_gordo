@@ -16,6 +16,7 @@ public class Verificación_del_correo extends javax.swing.JFrame {
     public Verificación_del_correo() {
         initComponents();
         TextPrompt verificacion_correo=new TextPrompt("Ingrese su correo electronico", tf_verificacion_de_correo);
+        this.setLocationRelativeTo(null); //CENTRANDO EL JFRAME
     }
 
     /**

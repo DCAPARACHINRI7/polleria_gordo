@@ -26,6 +26,7 @@ public class Resumen_Diario extends javax.swing.JFrame {
         TextPrompt gastos_promedio_por_caso = new TextPrompt("10", tf_gastopromedioporcliente);//GASTOS PROMEDIO POR CLIENTE
         TextPrompt totalCliente = new TextPrompt("50", tf_totalcliente);//MESEROS TOTALES
         TextPrompt platillo_totales = new TextPrompt("10", tf_platillostotales);//MESEROS TOTALES
+        this.setLocationRelativeTo(null); //CENTRANDO EL JFRAME
         
     }
 

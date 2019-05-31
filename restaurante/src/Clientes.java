@@ -15,14 +15,14 @@ public class Clientes extends javax.swing.JFrame {
      */
     public Clientes() {
         initComponents();
-        TextPrompt ID = new TextPrompt("Ingrese si ID", tf_id);//ID
-        TextPrompt nombre = new TextPrompt("Ingrese su nombre", tf_nombres);//NOMBRES
-        TextPrompt apellido = new TextPrompt("Ingrese su apellido", tf_apellido);//APELLIDO
-        TextPrompt fecha_nac = new TextPrompt("Ingrese su fecha_nacimiento", tf_Fecha_de_nacimiento);//FECHA DE NACIMIENTO
-        TextPrompt correo_electronico = new TextPrompt("Ingrese su correo electronico", tf_correoelectronico);//CORREO ELECTRONICO
-        TextPrompt numer_celular = new TextPrompt("Ingrese su numero de celular", tf_numCelular);//NUMERO DE CELULAR
-        TextPrompt ingrese_su_fecha_registro = new TextPrompt("Ingrese su fecha de registro", tf_Fecha_de_registro1);//FECHA DE REGISTRO
-        TextPrompt ultimaVista = new TextPrompt("Ingrese la ultima vista", tf_ultima_vista);//ULTIMA VISTA
+        TextPrompt ID = new TextPrompt("010203040506070809", tf_id);//ID
+        TextPrompt nombre = new TextPrompt("Jorge Luis", tf_nombres);//NOMBRES
+        TextPrompt apellido = new TextPrompt("Carrillo Gutierrez", tf_apellido);//APELLIDO
+        TextPrompt fecha_nac = new TextPrompt("27/01/1999", tf_Fecha_de_nacimiento);//FECHA DE NACIMIENTO
+        TextPrompt correo_electronico = new TextPrompt("Jorge@gmail.com", tf_correoelectronico);//CORREO ELECTRONICO
+        TextPrompt numer_celular = new TextPrompt("987654321", tf_numCelular);//NUMERO DE CELULAR
+        TextPrompt ingrese_su_fecha_registro = new TextPrompt("13/05/2015", tf_Fecha_de_registro1);//FECHA DE REGISTRO
+        TextPrompt ultimaVista = new TextPrompt("13/05/2019", tf_ultima_vista);//ULTIMA VISTA
     }
 
     /**
@@ -46,6 +46,15 @@ public class Clientes extends javax.swing.JFrame {
         utilizado = new javax.swing.JLabel();
         ulti_vista = new javax.swing.JLabel();
         btnMinimisar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         btn = new javax.swing.JButton();
         btnmodificar = new javax.swing.JButton();
         btnagregar = new javax.swing.JButton();
@@ -103,11 +112,11 @@ public class Clientes extends javax.swing.JFrame {
 
         utilizado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         utilizado.setText("Fecha de registro:");
-        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 108, 150, 30));
+        jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 110, 150, 30));
 
         ulti_vista.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         ulti_vista.setText("Ultima vista:");
-        jPanel1.add(ulti_vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 158, 100, 20));
+        jPanel1.add(ulti_vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 160, 100, 20));
 
         btnMinimisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizar.png"))); // NOI18N
         btnMinimisar.setBorder(null);
@@ -115,6 +124,33 @@ public class Clientes extends javax.swing.JFrame {
         btnMinimisar.setContentAreaFilled(false);
         btnMinimisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizarsegundo.png"))); // NOI18N
         jPanel1.add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1136, 20, 40, 40));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 230, 10));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 230, 10));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, 230, 10));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, 230, 10));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, 230, 10));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 126, 230, 10));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 170, 230, 10));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
 
         btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_eliminar.png"))); // NOI18N
         btn.setAutoscrolls(true);
@@ -206,7 +242,7 @@ public class Clientes extends javax.swing.JFrame {
                 tf_ultima_vistaActionPerformed(evt);
             }
         });
-        jPanel1.add(tf_ultima_vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 150, 220, 30));
+        jPanel1.add(tf_ultima_vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 150, 210, 30));
 
         tf_id.setBorder(null);
         jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 270, 30));
@@ -233,7 +269,7 @@ public class Clientes extends javax.swing.JFrame {
                 tf_Fecha_de_registro1ActionPerformed(evt);
             }
         });
-        jPanel1.add(tf_Fecha_de_registro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 100, 220, 30));
+        jPanel1.add(tf_Fecha_de_registro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 100, 210, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -343,6 +379,15 @@ public class Clientes extends javax.swing.JFrame {
     private javax.swing.JLabel fecha_de_nacimiento;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel id;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;

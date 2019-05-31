@@ -15,17 +15,16 @@ public class Cupones extends javax.swing.JFrame {
      */
     public Cupones() {
         initComponents();
-        TextPrompt ID = new TextPrompt("Ingrese su ID", tf_id);//ID
-        TextPrompt titulo = new TextPrompt("Ingrese el titulo", tf_titulo);//TITULO
-//        TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
-  //      TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
-    //    TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
-      //  TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
-        //TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
-       // TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
-        //TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
-        //TextPrompt repetirContraseña = new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
-        
+        TextPrompt ID = new TextPrompt("012554545484", tf_id);//ID
+        TextPrompt titulo = new TextPrompt("Feliz Día de las Madres", tf_titulo);//TITULO
+        TextPrompt descuento = new TextPrompt("10%", tf_descuento);//DESCUENTO
+        TextPrompt stock = new TextPrompt("100", tf_stock);//STOCK
+        TextPrompt fechacaducacion = new TextPrompt("23/05/2019", tf_fecha_de_caducidad);//FECHA DE CADUCACION
+        TextPrompt fechacreacion = new TextPrompt("13/05/2019", tf_fecha_de_creacion);//FECHA DE CREACION
+        TextPrompt fechauso = new TextPrompt("14/05/2019", tf_fecha_de_uso);//FECHA DE USO
+        TextPrompt utilizado = new TextPrompt("Jorge Luis Gutierrez", tf_utilizado);//UTILIZADO
+        TextPrompt valido = new TextPrompt("Todos los platillos", tf_valido);//VALIDO
+
     }
 
     /**
@@ -53,6 +52,16 @@ public class Cupones extends javax.swing.JFrame {
         btn = new javax.swing.JButton();
         btnmodificar = new javax.swing.JButton();
         btnagregar = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         btnCerrar = new javax.swing.JButton();
         fondo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -105,7 +114,7 @@ public class Cupones extends javax.swing.JFrame {
         jPanel1.add(valido, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 108, 100, 20));
 
         fechadecreacion.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        fechadecreacion.setText("Fecha de Creación");
+        fechadecreacion.setText("Fecha de Creación:");
         jPanel1.add(fechadecreacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 208, 150, 20));
 
         utilizado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -166,6 +175,36 @@ public class Cupones extends javax.swing.JFrame {
         });
         jPanel1.add(btnagregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1208, 103, -1, 30));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 230, 10));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 230, 10));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 120, 230, 10));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 170, 230, 10));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, 230, 10));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 120, 230, 10));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 170, 230, 10));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 220, 230, 10));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
+
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Cerrar.png"))); // NOI18N
         btnCerrar.setAutoscrolls(true);
         btnCerrar.setBorder(null);
@@ -219,6 +258,11 @@ public class Cupones extends javax.swing.JFrame {
         jPanel1.add(tf_fecha_de_creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 200, 30));
 
         tf_utilizado.setBorder(null);
+        tf_utilizado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_utilizadoActionPerformed(evt);
+            }
+        });
         jPanel1.add(tf_utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 100, 200, 30));
 
         tf_fecha_de_uso.setBorder(null);
@@ -248,6 +292,10 @@ public class Cupones extends javax.swing.JFrame {
     private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnActionPerformed
+
+    private void tf_utilizadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_utilizadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_utilizadoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -298,7 +346,17 @@ public class Cupones extends javax.swing.JFrame {
     private javax.swing.JLabel fechadeuso1;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel id;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;

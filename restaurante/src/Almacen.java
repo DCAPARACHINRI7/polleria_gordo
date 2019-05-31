@@ -19,16 +19,16 @@ public class Almacen extends javax.swing.JFrame {
     public Almacen() {
         initComponents();
         //tf_id.setBackground(new Color(255,255,255));
-        TextPrompt id=new TextPrompt("Ingrese su ID", tf_id);//ID
+        TextPrompt id=new TextPrompt("010203040506070809", tf_id);//ID
         //tf_Producto.setBackground(new Color(255,255,255));
-        TextPrompt producto=new TextPrompt("Ingrese su producto", tf_Producto);//PRODUCTO
-        TextPrompt categoria=new TextPrompt("Ingrese a la categoria que pertenece", tf_Categoria);//CATEGORIA
-        TextPrompt proveedor=new TextPrompt("Ingrese su proveedor", tf_Proveedor);//PROVEEDOR
-        TextPrompt celular=new TextPrompt("Ingrese su N° de celular", tf_Celular);//CELULAR
-        TextPrompt correo=new TextPrompt("Ingrese su correo electronico", tf_CorreoElectronico);//CORREO ELECTRONICO
-        TextPrompt precio=new TextPrompt("Ingrese el precio del producto", tf_Precio);//PRECIO
-        TextPrompt calidad=new TextPrompt("Ingrese la cantidad", tf_Cantidad);//CANTIDAD
-        TextPrompt medida=new TextPrompt("Ingrese la unidad de medida", tf_Unidad_de_medida);//UNIDAD DE MEDIDA
+        TextPrompt producto=new TextPrompt("Fideos", tf_Producto);//PRODUCTO
+        TextPrompt categoria=new TextPrompt("Pastas", tf_Categoria);//CATEGORIA
+        TextPrompt proveedor=new TextPrompt("Molitalia", tf_Proveedor);//PROVEEDOR
+        TextPrompt celular=new TextPrompt("986543210", tf_Celular);//CELULAR
+        TextPrompt correo=new TextPrompt("Molitalia@gmail.com", tf_CorreoElectronico);//CORREO ELECTRONICO
+        TextPrompt precio=new TextPrompt("S/.1204", tf_Precio);//PRECIO
+        TextPrompt calidad=new TextPrompt("1250", tf_Cantidad);//CANTIDAD
+        TextPrompt medida=new TextPrompt("5 Kg.", tf_Unidad_de_medida);//UNIDAD DE MEDIDA
     }
 
     /**
@@ -50,6 +50,7 @@ public class Almacen extends javax.swing.JFrame {
         valido = new javax.swing.JLabel();
         fechadecreacion = new javax.swing.JLabel();
         utilizado = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         fechadeuso1 = new javax.swing.JLabel();
         fechadeuso = new javax.swing.JLabel();
         btnMinimisar = new javax.swing.JButton();
@@ -61,6 +62,16 @@ public class Almacen extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         tf_Unidad_de_medida = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         tf_Cantidad = new javax.swing.JTextField();
         tf_Precio = new javax.swing.JTextField();
         tf_CorreoElectronico = new javax.swing.JTextField();
@@ -112,6 +123,9 @@ public class Almacen extends javax.swing.JFrame {
         utilizado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         utilizado.setText("Precio:");
         jPanel1.add(utilizado, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 108, 60, 20));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 220, 230, 10));
 
         fechadeuso1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         fechadeuso1.setText("Unidad de Medida:");
@@ -198,6 +212,7 @@ public class Almacen extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 1260, 450));
 
+        tf_Unidad_de_medida.setBorder(null);
         tf_Unidad_de_medida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_Unidad_de_medidaActionPerformed(evt);
@@ -205,6 +220,37 @@ public class Almacen extends javax.swing.JFrame {
         });
         jPanel1.add(tf_Unidad_de_medida, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 200, 210, 30));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 230, 10));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 230, 10));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 230, 10));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, 230, 10));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 120, 230, 10));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 170, 230, 10));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 230, 10));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 230, 10));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 230, 10));
+
+        tf_Cantidad.setBorder(null);
         tf_Cantidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_CantidadActionPerformed(evt);
@@ -212,6 +258,7 @@ public class Almacen extends javax.swing.JFrame {
         });
         jPanel1.add(tf_Cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 150, 210, 30));
 
+        tf_Precio.setBorder(null);
         tf_Precio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_PrecioActionPerformed(evt);
@@ -219,6 +266,7 @@ public class Almacen extends javax.swing.JFrame {
         });
         jPanel1.add(tf_Precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 100, 210, 30));
 
+        tf_CorreoElectronico.setBorder(null);
         tf_CorreoElectronico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_CorreoElectronicoActionPerformed(evt);
@@ -226,6 +274,7 @@ public class Almacen extends javax.swing.JFrame {
         });
         jPanel1.add(tf_CorreoElectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 200, 210, 30));
 
+        tf_Celular.setBorder(null);
         tf_Celular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_CelularActionPerformed(evt);
@@ -233,6 +282,7 @@ public class Almacen extends javax.swing.JFrame {
         });
         jPanel1.add(tf_Celular, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, 210, 30));
 
+        tf_Proveedor.setBorder(null);
         tf_Proveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_ProveedorActionPerformed(evt);
@@ -248,6 +298,7 @@ public class Almacen extends javax.swing.JFrame {
         });
         jPanel1.add(tf_Producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 210, 30));
 
+        tf_Categoria.setBorder(null);
         tf_Categoria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_CategoriaActionPerformed(evt);
@@ -261,7 +312,7 @@ public class Almacen extends javax.swing.JFrame {
                 tf_idActionPerformed(evt);
             }
         });
-        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 210, 30));
+        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 260, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -388,6 +439,17 @@ public class Almacen extends javax.swing.JFrame {
     private javax.swing.JLabel fechadeuso1;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel id;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;

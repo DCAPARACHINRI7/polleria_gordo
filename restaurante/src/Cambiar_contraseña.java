@@ -15,8 +15,8 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
      */
     public Cambiar_contraseña() {
         initComponents();
-         TextPrompt nuevaContraseña=new TextPrompt("Ingrese una nueva contraseña", contrasena_nueva);//LA NUEVA CONTRASEÑA
-          TextPrompt repetirContraseña=new TextPrompt("Ingrese de nuevo su contreseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
+         TextPrompt nuevaContraseña=new TextPrompt("Ingrese nueva contraseña", contrasena_nueva);//LA NUEVA CONTRASEÑA
+          TextPrompt repetirContraseña=new TextPrompt("Confirmar nueva contraseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
     }
 
     /**

@@ -46,6 +46,7 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         cambiar_contraseña.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Titulocambiarcontrasseña.png"))); // NOI18N

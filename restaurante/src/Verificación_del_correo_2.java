@@ -41,6 +41,7 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         olvidemicontraseña.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N

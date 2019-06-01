@@ -70,6 +70,7 @@ public class Platillos extends javax.swing.JFrame {
         tf_nombre = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -219,7 +220,7 @@ public class Platillos extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 1260, 450));
 
         tf_id.setBorder(null);
-        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 270, 30));
+        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 230, 30));
 
         tf_cocinero.setBorder(null);
         jPanel1.add(tf_cocinero, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 150, 300, 30));
@@ -260,7 +261,8 @@ public class Platillos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnagregarActionPerformed
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
-        // TODO add your handling code here:
+        //INGRESANDO EL BOTON DE CERRAR SESION
+        System.exit(0);
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     /**

@@ -18,6 +18,7 @@ public class Almacen extends javax.swing.JFrame {
      */
     public Almacen() {
         initComponents();
+        
         //tf_id.setBackground(new Color(255,255,255));
         TextPrompt id=new TextPrompt("010203040506070809", tf_id);//ID
         //tf_Producto.setBackground(new Color(255,255,255));
@@ -82,6 +83,7 @@ public class Almacen extends javax.swing.JFrame {
         tf_id = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -351,7 +353,8 @@ public class Almacen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnagregarActionPerformed
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
-        // TODO add your handling code here:
+        //INGRESANDO EL BOTON DE CERRAR SESION
+        System.exit(0);
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void tf_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_idActionPerformed

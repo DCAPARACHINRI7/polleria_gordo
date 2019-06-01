@@ -24,7 +24,6 @@ public class Inicio extends javax.swing.JFrame {
         TextPrompt usuario=new TextPrompt("Ingrese su Usuario", tf_Usuario);
         jp_contrace.setBackground(new Color(255,255,255));
         TextPrompt contra=new TextPrompt("Ingrese su contraseña", jp_contrace);
-        this.setLocationRelativeTo(null); //CENTRANDO EL JFRAME
     }
 
     /**
@@ -52,7 +51,6 @@ public class Inicio extends javax.swing.JFrame {
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LogoPequeño.png"))); // NOI18N

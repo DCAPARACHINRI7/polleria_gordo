@@ -21,7 +21,6 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         TextPrompt correo=new TextPrompt("Ingrese su Correo Electronico", tf_correo);
         TextPrompt contra=new TextPrompt("Ingrese su contraseña", tf_contra);
         TextPrompt numCelular=new TextPrompt("Ingrese su Numero de Celular", tf_num_celular);
-        this.setLocationRelativeTo(null); //CENTRANDO EL JFRAME
     }
 
     /**
@@ -57,15 +56,16 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         olvidemicontraseña = new javax.swing.JLabel();
         tf_num_celular = new javax.swing.JTextField();
         tf_correo = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
         tf_apellido = new javax.swing.JTextField();
         tf_nombre = new javax.swing.JTextField();
         tf_usuario = new javax.swing.JTextField();
         tf_contra = new javax.swing.JPasswordField();
-        jdc_calendario = new com.toedter.calendar.JDateChooser();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
@@ -183,6 +183,9 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         });
         getContentPane().add(tf_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 430, 340, 30));
 
+        jTextField3.setBorder(null);
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 370, 30, 30));
+
         tf_apellido.setBorder(null);
         getContentPane().add(tf_apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 310, 330, 30));
 
@@ -195,8 +198,11 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         tf_contra.setBorder(null);
         getContentPane().add(tf_contra, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 190, 290, -1));
 
-        jdc_calendario.setForeground(new java.awt.Color(51, 51, 255));
-        getContentPane().add(jdc_calendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 370, 330, 30));
+        jTextField4.setBorder(null);
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 370, 30, 30));
+
+        jTextField5.setBorder(null);
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 370, 30, 30));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -280,7 +286,9 @@ public class Registro_de_usuario extends javax.swing.JFrame {
     private javax.swing.JLabel correo1;
     private javax.swing.JLabel cumpleaños;
     private javax.swing.JLabel fondo;
-    private com.toedter.calendar.JDateChooser jdc_calendario;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JLabel logo_pequeño;
     private javax.swing.JButton noVisible;
     private javax.swing.JLabel olvidemicontraseña;

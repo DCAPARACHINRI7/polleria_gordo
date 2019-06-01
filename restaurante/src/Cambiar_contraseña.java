@@ -15,9 +15,8 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
      */
     public Cambiar_contraseña() {
         initComponents();
-        TextPrompt nuevaContraseña = new TextPrompt("Ingrese nueva contraseña", contrasena_nueva);//LA NUEVA CONTRASEÑA
-        TextPrompt repetirContraseña = new TextPrompt("Confirmar nueva contraseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
-        this.setLocationRelativeTo(null); //CENTRANDO EL JFRAME
+         TextPrompt nuevaContraseña=new TextPrompt("Ingrese nueva contraseña", contrasena_nueva);//LA NUEVA CONTRASEÑA
+          TextPrompt repetirContraseña=new TextPrompt("Confirmar nueva contraseña", contrasena_repetida);//LA CONTRASEÑA REPETIDA
     }
 
     /**
@@ -145,11 +144,11 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void visible1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visible1ActionPerformed
-
+      
     }//GEN-LAST:event_visible1ActionPerformed
 
     private void noVisibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noVisibleActionPerformed
-
+     
     }//GEN-LAST:event_noVisibleActionPerformed
 
     private void visible2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visible2ActionPerformed

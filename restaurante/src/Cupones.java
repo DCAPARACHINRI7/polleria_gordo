@@ -24,7 +24,7 @@ public class Cupones extends javax.swing.JFrame {
         TextPrompt fechauso = new TextPrompt("14/05/2019", tf_fecha_de_uso);//FECHA DE USO
         TextPrompt utilizado = new TextPrompt("Jorge Luis Gutierrez", tf_utilizado);//UTILIZADO
         TextPrompt valido = new TextPrompt("Todos los platillos", tf_valido);//VALIDO
-        this.setLocationRelativeTo(null); //CENTRANDO EL JFRAME
+
     }
 
     /**
@@ -78,7 +78,6 @@ public class Cupones extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));

@@ -15,6 +15,7 @@ public class Registro_de_usuario extends javax.swing.JFrame {
      */
     public Registro_de_usuario() {
         initComponents();
+        this.setLocationRelativeTo(null);
         TextPrompt usuario=new TextPrompt("Ingrese su Nombre de Usuario",tf_usuario);
         TextPrompt nombre=new TextPrompt("Ingrese su Nombre", tf_nombre);
         TextPrompt apellido=new TextPrompt("Ingrese su Apellido", tf_apellido);

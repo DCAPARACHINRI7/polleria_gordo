@@ -15,6 +15,7 @@ public class Clientes extends javax.swing.JFrame {
      */
     public Clientes() {
         initComponents();
+        this.setLocationRelativeTo(null);
         TextPrompt ID = new TextPrompt("010203040506070809", tf_id);//ID
         TextPrompt nombre = new TextPrompt("Jorge Luis", tf_nombres);//NOMBRES
         TextPrompt apellido = new TextPrompt("Carrillo Gutierrez", tf_apellido);//APELLIDO
@@ -221,7 +222,7 @@ public class Clientes extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 1260, 450));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 1260, 450));
 
         tf_numCelular.setBorder(null);
         tf_numCelular.addActionListener(new java.awt.event.ActionListener() {

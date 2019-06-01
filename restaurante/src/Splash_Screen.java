@@ -15,6 +15,7 @@ public class Splash_Screen extends javax.swing.JFrame {
      */
     public Splash_Screen() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

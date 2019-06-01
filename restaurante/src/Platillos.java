@@ -15,6 +15,7 @@ public class Platillos extends javax.swing.JFrame {
      */
     public Platillos() {
         initComponents();
+        this.setLocationRelativeTo(null);
         TextPrompt IDE = new TextPrompt("Ingrese si ID", tf_id);//ID
         TextPrompt nombre = new TextPrompt("Ingrese su nombre", tf_nombre);//ID
         TextPrompt cocineros = new TextPrompt("Cantidad de cocineros", tf_cocinero);//ID

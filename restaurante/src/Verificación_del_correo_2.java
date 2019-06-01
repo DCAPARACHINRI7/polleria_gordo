@@ -15,6 +15,7 @@ public class Verificación_del_correo_2 extends javax.swing.JFrame {
      */
     public Verificación_del_correo_2() {
         initComponents();
+        this.setLocationRelativeTo(null);
         TextPrompt codigo=new TextPrompt("Ingrese su código", tf_codigo);
     }
 

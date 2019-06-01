@@ -15,6 +15,7 @@ public class Resumen_Diario extends javax.swing.JFrame {
      */
     public Resumen_Diario() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

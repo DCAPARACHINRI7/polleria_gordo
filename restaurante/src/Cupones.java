@@ -15,6 +15,7 @@ public class Cupones extends javax.swing.JFrame {
      */
     public Cupones() {
         initComponents();
+        this.setLocationRelativeTo(null);
         TextPrompt ID = new TextPrompt("012554545484", tf_id);//ID
         TextPrompt titulo = new TextPrompt("Feliz Día de las Madres", tf_titulo);//TITULO
         TextPrompt descuento = new TextPrompt("10%", tf_descuento);//DESCUENTO

@@ -20,6 +20,7 @@ public class Inicio extends javax.swing.JFrame {
      */
     public Inicio() {
         initComponents();
+        this.setLocationRelativeTo(null);
         tf_Usuario.setBackground(new Color(255,255,255));
         TextPrompt usuario=new TextPrompt("Ingrese su Usuario", tf_Usuario);
         jp_contrace.setBackground(new Color(255,255,255));

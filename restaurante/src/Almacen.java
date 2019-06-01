@@ -18,7 +18,7 @@ public class Almacen extends javax.swing.JFrame {
      */
     public Almacen() {
         initComponents();
-        
+        this.setLocationRelativeTo(null);
         //tf_id.setBackground(new Color(255,255,255));
         TextPrompt id=new TextPrompt("010203040506070809", tf_id);//ID
         //tf_Producto.setBackground(new Color(255,255,255));
@@ -212,7 +212,7 @@ public class Almacen extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 1260, 450));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 1260, 450));
 
         tf_Unidad_de_medida.setBorder(null);
         tf_Unidad_de_medida.addActionListener(new java.awt.event.ActionListener() {

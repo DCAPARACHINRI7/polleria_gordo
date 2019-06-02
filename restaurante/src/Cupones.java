@@ -57,12 +57,12 @@ public class Cupones extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jdc_fecha_caducidad = new com.toedter.calendar.JDateChooser();
+        jdc_fecha_creacion = new com.toedter.calendar.JDateChooser();
         btnCerrar = new javax.swing.JButton();
         fondo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -189,23 +189,25 @@ public class Cupones extends javax.swing.JFrame {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 170, 230, 10));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, 230, 10));
-
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 120, 230, 10));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 170, 230, 10));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 220, 230, 10));
-
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
+
+        jdc_fecha_caducidad.setBackground(new java.awt.Color(255, 255, 255));
+        jdc_fecha_caducidad.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(jdc_fecha_caducidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 200, 210, 30));
+
+        jdc_fecha_creacion.setBackground(new java.awt.Color(255, 255, 255));
+        jdc_fecha_creacion.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(jdc_fecha_creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 210, 30));
 
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Cerrar.png"))); // NOI18N
         btnCerrar.setAutoscrolls(true);
@@ -349,7 +351,6 @@ public class Cupones extends javax.swing.JFrame {
     private javax.swing.JLabel fechadeuso1;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel id;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
@@ -357,12 +358,13 @@ public class Cupones extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private com.toedter.calendar.JDateChooser jdc_fecha_caducidad;
+    private com.toedter.calendar.JDateChooser jdc_fecha_creacion;
     private javax.swing.JLabel stock;
     private javax.swing.JTextField tf_descuento;
     private javax.swing.JTextField tf_fecha_de_caducidad;

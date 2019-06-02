@@ -49,13 +49,13 @@ public class Clientes extends javax.swing.JFrame {
         btnMinimisar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jdc_fecha_nacimiento = new com.toedter.calendar.JDateChooser();
+        jdc_fecha_de_registro = new com.toedter.calendar.JDateChooser();
         btn = new javax.swing.JButton();
         btnmodificar = new javax.swing.JButton();
         btnagregar = new javax.swing.JButton();
@@ -133,17 +133,11 @@ public class Clientes extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 230, 10));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, 230, 10));
-
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, 230, 10));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, 230, 10));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 126, 230, 10));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 170, 230, 10));
@@ -153,6 +147,14 @@ public class Clientes extends javax.swing.JFrame {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
+
+        jdc_fecha_nacimiento.setBackground(new java.awt.Color(255, 255, 255));
+        jdc_fecha_nacimiento.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(jdc_fecha_nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 210, 30));
+
+        jdc_fecha_de_registro.setBackground(new java.awt.Color(255, 255, 255));
+        jdc_fecha_de_registro.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(jdc_fecha_de_registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 110, 210, 30));
 
         btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_eliminar.png"))); // NOI18N
         btn.setAutoscrolls(true);
@@ -385,15 +387,15 @@ public class Clientes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private com.toedter.calendar.JDateChooser jdc_fecha_de_registro;
+    private com.toedter.calendar.JDateChooser jdc_fecha_nacimiento;
     private javax.swing.JLabel nombre;
     private javax.swing.JLabel numero_de_celular;
     private javax.swing.JTextField tf_Fecha_de_nacimiento;

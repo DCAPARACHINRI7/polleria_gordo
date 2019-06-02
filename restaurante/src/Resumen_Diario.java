@@ -16,6 +16,16 @@ public class Resumen_Diario extends javax.swing.JFrame {
     public Resumen_Diario() {
         initComponents();
         this.setLocationRelativeTo(null);
+        TextPrompt ID = new TextPrompt("010203040506070809", tf_id);//ID
+
+        TextPrompt cargo = new TextPrompt("Cocinero", tf_cargo);//CARGO
+        TextPrompt cocineroTotales = new TextPrompt("010203040506070809", tf_cocinerostotales);//COCINERO TOTALES
+        TextPrompt gatopromedio = new TextPrompt("010203040506070809", tf_gastopromedioporcliente);//GATOPROMEDIO
+        TextPrompt ingreso = new TextPrompt("", tf_ingreso);//INGRESO
+        TextPrompt insumosgastados = new TextPrompt("010203040506070809", tf_insumosgastados);//INSUMOSGASTADOS
+        TextPrompt meseros = new TextPrompt("010203040506070809", tf_meserostotales);//MESEROS
+        TextPrompt patillo_total = new TextPrompt("010203040506070809", tf_patillostotales);//PLATILLO TOTALES
+        TextPrompt total_cliente = new TextPrompt("010203040506070809", tf_totalcliente);//TOTAL CLIENTE
     }
 
     /**
@@ -29,6 +39,24 @@ public class Resumen_Diario extends javax.swing.JFrame {
 
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        tf_id = new javax.swing.JTextField();
+        tf_ingreso = new javax.swing.JTextField();
+        tf_cargo = new javax.swing.JTextField();
+        tf_totalcliente = new javax.swing.JTextField();
+        tf_patillostotales = new javax.swing.JTextField();
+        tf_cocinerostotales = new javax.swing.JTextField();
+        tf_meserostotales = new javax.swing.JTextField();
+        tf_insumosgastados = new javax.swing.JTextField();
+        tf_gastopromedioporcliente = new javax.swing.JTextField();
         id = new javax.swing.JLabel();
         titulo = new javax.swing.JLabel();
         stock = new javax.swing.JLabel();
@@ -49,6 +77,7 @@ public class Resumen_Diario extends javax.swing.JFrame {
         valido7 = new javax.swing.JLabel();
         stock1 = new javax.swing.JLabel();
         stock2 = new javax.swing.JLabel();
+        jdc_DIA = new com.toedter.calendar.JDateChooser();
         btnCerrar = new javax.swing.JButton();
         ResumenDiario = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
@@ -61,6 +90,105 @@ public class Resumen_Diario extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 230, 10));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 455, 230, 10));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 507, 230, 10));
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 350, 230, 10));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 400, 230, 10));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 453, 230, 10));
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 508, 230, 10));
+
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 360, 230, 10));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 420, 230, 10));
+
+        tf_id.setBorder(null);
+        tf_id.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_idActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 290, 30));
+
+        tf_ingreso.setBorder(null);
+        tf_ingreso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_ingresoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_ingreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 440, 250, 20));
+
+        tf_cargo.setBorder(null);
+        tf_cargo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_cargoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_cargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 490, 240, 20));
+
+        tf_totalcliente.setBorder(null);
+        tf_totalcliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_totalclienteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_totalcliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 340, 250, 20));
+
+        tf_patillostotales.setBorder(null);
+        tf_patillostotales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_patillostotalesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_patillostotales, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 230, 30));
+
+        tf_cocinerostotales.setBorder(null);
+        tf_cocinerostotales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_cocinerostotalesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_cocinerostotales, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, 210, 30));
+
+        tf_meserostotales.setBorder(null);
+        tf_meserostotales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_meserostotalesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_meserostotales, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 490, 240, 20));
+
+        tf_insumosgastados.setBorder(null);
+        tf_insumosgastados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_insumosgastadosActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_insumosgastados, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 340, 250, 30));
+
+        tf_gastopromedioporcliente.setBorder(null);
+        tf_gastopromedioporcliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_gastopromedioporclienteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(tf_gastopromedioporcliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 400, 240, 30));
 
         id.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         id.setText("ID:");
@@ -149,6 +277,10 @@ public class Resumen_Diario extends javax.swing.JFrame {
         stock2.setText("Cargo:");
         jPanel1.add(stock2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 60, 30));
 
+        jdc_DIA.setBackground(new java.awt.Color(255, 255, 255));
+        jdc_DIA.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(jdc_DIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 270, 30));
+
         jScrollPane2.setViewportView(jPanel1);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1280, 650));
@@ -193,6 +325,42 @@ public class Resumen_Diario extends javax.swing.JFrame {
         //INGRESANDO EL BOTON DE CERRAR SESION
         System.exit(0);
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void tf_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_idActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_idActionPerformed
+
+    private void tf_ingresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_ingresoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_ingresoActionPerformed
+
+    private void tf_cargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_cargoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_cargoActionPerformed
+
+    private void tf_totalclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_totalclienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_totalclienteActionPerformed
+
+    private void tf_patillostotalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_patillostotalesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_patillostotalesActionPerformed
+
+    private void tf_cocinerostotalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_cocinerostotalesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_cocinerostotalesActionPerformed
+
+    private void tf_meserostotalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_meserostotalesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_meserostotalesActionPerformed
+
+    private void tf_insumosgastadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_insumosgastadosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_insumosgastadosActionPerformed
+
+    private void tf_gastopromedioporclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_gastopromedioporclienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_gastopromedioporclienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,13 +408,32 @@ public class Resumen_Diario extends javax.swing.JFrame {
     private javax.swing.JLabel fechadeuso1;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel id;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
+    private com.toedter.calendar.JDateChooser jdc_DIA;
     private javax.swing.JLabel stock;
     private javax.swing.JLabel stock1;
     private javax.swing.JLabel stock2;
+    private javax.swing.JTextField tf_cargo;
+    private javax.swing.JTextField tf_cocinerostotales;
+    private javax.swing.JTextField tf_gastopromedioporcliente;
+    private javax.swing.JTextField tf_id;
+    private javax.swing.JTextField tf_ingreso;
+    private javax.swing.JTextField tf_insumosgastados;
+    private javax.swing.JTextField tf_meserostotales;
+    private javax.swing.JTextField tf_patillostotales;
+    private javax.swing.JTextField tf_totalcliente;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel utilizado;
     private javax.swing.JLabel valido;

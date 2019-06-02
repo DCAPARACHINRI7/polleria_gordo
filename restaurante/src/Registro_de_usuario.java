@@ -43,6 +43,7 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         barra2 = new javax.swing.JLabel();
         visible = new javax.swing.JButton();
         noVisible = new javax.swing.JButton();
+        jdc_fecha_creacion = new com.toedter.calendar.JDateChooser();
         candado1 = new javax.swing.JLabel();
         barra3 = new javax.swing.JLabel();
         candado2 = new javax.swing.JLabel();
@@ -121,6 +122,10 @@ public class Registro_de_usuario extends javax.swing.JFrame {
             }
         });
         getContentPane().add(noVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(1112, 186, 30, 20));
+
+        jdc_fecha_creacion.setBackground(new java.awt.Color(255, 255, 255));
+        jdc_fecha_creacion.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(jdc_fecha_creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 370, 340, 30));
 
         candado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Candado.png"))); // NOI18N
         getContentPane().add(candado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 180, 20, 30));
@@ -291,6 +296,7 @@ public class Registro_de_usuario extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
+    private com.toedter.calendar.JDateChooser jdc_fecha_creacion;
     private javax.swing.JLabel logo_pequeño;
     private javax.swing.JButton noVisible;
     private javax.swing.JLabel olvidemicontraseña;

@@ -76,6 +76,11 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         btnRegresar.setBorderPainted(false);
         btnRegresar.setContentAreaFilled(false);
         btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, 40, 40));
 
         titulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Titulo.png"))); // NOI18N
@@ -239,6 +244,13 @@ public class Registro_de_usuario extends javax.swing.JFrame {
     private void tf_num_celularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_num_celularActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_num_celularActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        //retrocediendo a jframe de INICIO
+        this.setVisible(false);
+        Inicio inicio = new Inicio();
+        inicio.setVisible(true);
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

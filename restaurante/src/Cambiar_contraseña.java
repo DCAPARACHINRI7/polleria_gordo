@@ -58,6 +58,11 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
         btnRegresar.setBorderPainted(false);
         btnRegresar.setContentAreaFilled(false);
         btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 20, 40, 40));
 
         logo_pequeño.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Logo_BG.png"))); // NOI18N
@@ -160,6 +165,12 @@ public class Cambiar_contraseña extends javax.swing.JFrame {
     private void noVisible1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noVisible1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_noVisible1ActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        this.setVisible(false);
+        Verificación_del_correo_2 verificacion2 = new Verificación_del_correo_2();
+        verificacion2.setVisible(true);
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

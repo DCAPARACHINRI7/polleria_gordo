@@ -150,6 +150,11 @@ public class Menu_Principal extends javax.swing.JFrame {
         btncliente.setBorderPainted(false);
         btncliente.setContentAreaFilled(false);
         btncliente.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/clientessecundario.png"))); // NOI18N
+        btncliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnclienteActionPerformed(evt);
+            }
+        });
         jPanel2.add(btncliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 172, 160, 160));
 
         lbresumendiario2.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
@@ -187,6 +192,12 @@ public class Menu_Principal extends javax.swing.JFrame {
         //INGRESANDO EL BOTON DE CERRAR SESION
         System.exit(0);
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void btnclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnclienteActionPerformed
+        this.setVisible(false);
+        Clientes cliente = new Clientes();
+        cliente.setVisible(true);
+    }//GEN-LAST:event_btnclienteActionPerformed
 
     /**
      * @param args the command line arguments

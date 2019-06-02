@@ -116,6 +116,11 @@ public class Inicio extends javax.swing.JFrame {
         regustrar.setBorderPainted(false);
         regustrar.setContentAreaFilled(false);
         regustrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_RegistrarseSecundario.png"))); // NOI18N
+        regustrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regustrarActionPerformed(evt);
+            }
+        });
         getContentPane().add(regustrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 560, 340, 50));
 
         olvidemicontraseña1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -177,6 +182,13 @@ public class Inicio extends javax.swing.JFrame {
     private void jp_contraceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jp_contraceActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jp_contraceActionPerformed
+
+    private void regustrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regustrarActionPerformed
+        //BOTON DE REGISTRO A REGISTRO DE USUARIO
+        this.setVisible(false);
+        Registro_de_usuario regUsuario = new Registro_de_usuario();
+        regUsuario.setVisible(true);
+    }//GEN-LAST:event_regustrarActionPerformed
 
     /**
      * @param args the command line arguments

@@ -1,3 +1,4 @@
+package dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -5,8 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import java.sql.Statement;
-public class conexion {
-    /*creamos una variable tipo conexion*/
+
+
+public class Conexion {
+/*creamos una variable tipo conexion*/
     static Connection contacto = null;
 
 /*metodo estatico  Indica que no es necesario crear una instancia de la clase 
@@ -16,7 +19,7 @@ public class conexion {
     public static Connection getConexion() 
         {
            /* una varible donde sera almacenado esta url de la conexion*/
-            String url = "jdbc:sqlserver://CkriZz666:1433;databaseName=BaseDeDatos";
+            String url = "jdbc:sqlserver://DESKTOP-268N9O0\\SQLEXPRESS:1433;databaseName=proy_polleria";
             try 
                 {
 
@@ -35,7 +38,7 @@ public class conexion {
                         {
 			    /*Llamamos contacto Driver... con el metodo getconnection para traer
 			       los datos de la conexion*/
-                            contacto = DriverManager.getConnection(url, "sa", "123");
+                            contacto = DriverManager.getConnection(url, "proyecto", "123");
                         } catch (SQLException e) 
                             {
                                 JOptionPane.showMessageDialog(null, "Error:" + e.getMessage(), "Error de Conexion",JOptionPane.ERROR_MESSAGE);
@@ -67,9 +70,4 @@ public class conexion {
             return null;
         }
     }
-    
 }
-
-
-
-

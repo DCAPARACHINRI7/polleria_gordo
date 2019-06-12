@@ -1,9 +1,11 @@
+
+import dao.TextPrompt;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author David
@@ -306,6 +308,11 @@ public class Resumen_Diario extends javax.swing.JFrame {
         btnRegresar.setBorderPainted(false);
         btnRegresar.setContentAreaFilled(false);
         btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 20, 40, 40));
 
         btnMinimisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizar.png"))); // NOI18N
@@ -313,7 +320,12 @@ public class Resumen_Diario extends javax.swing.JFrame {
         btnMinimisar.setBorderPainted(false);
         btnMinimisar.setContentAreaFilled(false);
         btnMinimisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizarsegundo.png"))); // NOI18N
-        getContentPane().add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1136, 20, 40, 40));
+        btnMinimisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMinimisarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 20, 40, 40));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG_grande.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -361,6 +373,15 @@ public class Resumen_Diario extends javax.swing.JFrame {
     private void tf_gastopromedioporclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_gastopromedioporclienteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_gastopromedioporclienteActionPerformed
+
+    private void btnMinimisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinimisarActionPerformed
+        this.setExtendedState(ICONIFIED);
+    }//GEN-LAST:event_btnMinimisarActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        new Menu_Principal().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

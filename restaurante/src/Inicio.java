@@ -1,6 +1,10 @@
 
-import java.awt.Color;
+import clases.login;
+import dao.TextPrompt;
 
+import java.awt.Color;
+import static java.awt.image.ImageObserver.WIDTH;
+import javax.swing.JOptionPane;
 
 
 /*
@@ -109,6 +113,11 @@ public class Inicio extends javax.swing.JFrame {
         ingresar.setBorderPainted(false);
         ingresar.setContentAreaFilled(false);
         ingresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_IngresarSecundario.png"))); // NOI18N
+        ingresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ingresarActionPerformed(evt);
+            }
+        });
         getContentPane().add(ingresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(804, 482, 340, 50));
 
         regustrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Registrarse.png"))); // NOI18N
@@ -161,9 +170,11 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_noVisibleActionPerformed
 
     private void olvidemicontraseñaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_olvidemicontraseñaMouseClicked
-        
-        
-        /*A qui se colocara a donde se quiere mandar*/
+        if (tf_Usuario.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "Escriba su Usuario y luego presione este botón", "¡Importante!", WIDTH);
+        } else {
+            JOptionPane.showMessageDialog(this, "Se le enviará la contraseña a su correo electronico.", "¡Importante!", WIDTH);
+        }
     }//GEN-LAST:event_olvidemicontraseñaMouseClicked
 
     private void visibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visibleActionPerformed
@@ -172,7 +183,11 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_visibleActionPerformed
 
     private void olvidemicontraseña1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_olvidemicontraseña1MouseClicked
-        // TODO add your handling code here:
+        if (tf_Usuario.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "Escriba su Usuario y luego presione este botón", "¡Importante!", WIDTH);
+        } else {
+            JOptionPane.showMessageDialog(this, "Se le enviará la contraseña a su correo electronico.", "¡Importante!", WIDTH);
+        }
     }//GEN-LAST:event_olvidemicontraseña1MouseClicked
 
     private void tf_UsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_UsuarioActionPerformed
@@ -189,6 +204,20 @@ public class Inicio extends javax.swing.JFrame {
         Registro_de_usuario regUsuario = new Registro_de_usuario();
         regUsuario.setVisible(true);
     }//GEN-LAST:event_regustrarActionPerformed
+
+    private void ingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresarActionPerformed
+
+    login usu = new login();
+    
+    usu.setUsuario(tf_Usuario.getText());
+    usu.setPassword(jp_contrace.getText());
+    
+    if(usu.login()){
+        Menu_Principal me = new Menu_Principal();
+        me.setVisible(true);
+    }
+        
+    }//GEN-LAST:event_ingresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -231,13 +260,13 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel candado;
     private javax.swing.JLabel fondo;
     private javax.swing.JButton ingresar;
-    private javax.swing.JPasswordField jp_contrace;
+    public static javax.swing.JPasswordField jp_contrace;
     private javax.swing.JLabel logo;
     private javax.swing.JButton noVisible;
     private javax.swing.JLabel olvidemicontraseña;
     private javax.swing.JLabel olvidemicontraseña1;
     private javax.swing.JButton regustrar;
-    private javax.swing.JTextField tf_Usuario;
+    public static javax.swing.JTextField tf_Usuario;
     private javax.swing.JLabel usuario;
     private javax.swing.JButton visible;
     // End of variables declaration//GEN-END:variables

@@ -1,3 +1,4 @@
+
 public class Menu_Principal extends javax.swing.JFrame {
 
     /**
@@ -69,6 +70,11 @@ public class Menu_Principal extends javax.swing.JFrame {
         btnMinimisar.setBorderPainted(false);
         btnMinimisar.setContentAreaFilled(false);
         btnMinimisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizarsegundo.png"))); // NOI18N
+        btnMinimisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMinimisarActionPerformed(evt);
+            }
+        });
         jPanel2.add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1136, 10, 40, 40));
 
         btnalmacen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/alamacen.png"))); // NOI18N
@@ -108,6 +114,11 @@ public class Menu_Principal extends javax.swing.JFrame {
         btnplatillo.setBorderPainted(false);
         btnplatillo.setContentAreaFilled(false);
         btnplatillo.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/platillos_segundo.png"))); // NOI18N
+        btnplatillo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnplatilloActionPerformed(evt);
+            }
+        });
         jPanel2.add(btnplatillo, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 419, 160, 160));
 
         lbresumendiario3.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
@@ -119,6 +130,11 @@ public class Menu_Principal extends javax.swing.JFrame {
         btnRegresar.setBorderPainted(false);
         btnRegresar.setContentAreaFilled(false);
         btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Salirsegundo.png"))); // NOI18N
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
         jPanel2.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 10, 40, 40));
 
         barra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/BG_grande.png"))); // NOI18N
@@ -156,6 +172,11 @@ public class Menu_Principal extends javax.swing.JFrame {
         btnresuemnDiario.setBorderPainted(false);
         btnresuemnDiario.setContentAreaFilled(false);
         btnresuemnDiario.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/resumendiario_segundo.png"))); // NOI18N
+        btnresuemnDiario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnresuemnDiarioActionPerformed(evt);
+            }
+        });
         jPanel2.add(btnresuemnDiario, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 172, 160, 160));
 
         lbresumendiario1.setFont(new java.awt.Font("Roboto", 0, 30)); // NOI18N
@@ -171,11 +192,13 @@ public class Menu_Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btncuponesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncuponesActionPerformed
-        // TODO add your handling code here:
+        new Cupones().setVisible(true);
+        dispose();
     }//GEN-LAST:event_btncuponesActionPerformed
 
     private void btnalmacenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnalmacenActionPerformed
-        // TODO add your handling code here:
+        new Almacen().setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnalmacenActionPerformed
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
@@ -184,10 +207,28 @@ public class Menu_Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void btnclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnclienteActionPerformed
-        this.setVisible(false);
-        Clientes cliente = new Clientes();
-        cliente.setVisible(true);
+        new Clientes().setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnclienteActionPerformed
+
+    private void btnMinimisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinimisarActionPerformed
+        this.setExtendedState(ICONIFIED);
+    }//GEN-LAST:event_btnMinimisarActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        new Inicio().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
+
+    private void btnresuemnDiarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnresuemnDiarioActionPerformed
+        new Resumen_Diario().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnresuemnDiarioActionPerformed
+
+    private void btnplatilloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnplatilloActionPerformed
+        new Platillos().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnplatilloActionPerformed
 
     /**
      * @param args the command line arguments

@@ -1,3 +1,6 @@
+
+import dao.TextPrompt;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -83,6 +86,11 @@ public class Clientes extends javax.swing.JFrame {
         btnRegresar.setBorderPainted(false);
         btnRegresar.setContentAreaFilled(false);
         btnRegresar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Backsegundo.png"))); // NOI18N
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 20, 40, 40));
 
         id.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -125,6 +133,11 @@ public class Clientes extends javax.swing.JFrame {
         btnMinimisar.setBorderPainted(false);
         btnMinimisar.setContentAreaFilled(false);
         btnMinimisar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Btn_Minimizarsegundo.png"))); // NOI18N
+        btnMinimisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMinimisarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnMinimisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1136, 20, 40, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
@@ -335,6 +348,15 @@ public class Clientes extends javax.swing.JFrame {
     private void tf_Fecha_de_registro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_Fecha_de_registro1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_Fecha_de_registro1ActionPerformed
+
+    private void btnMinimisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinimisarActionPerformed
+        this.setExtendedState(ICONIFIED);
+    }//GEN-LAST:event_btnMinimisarActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        new Menu_Principal().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

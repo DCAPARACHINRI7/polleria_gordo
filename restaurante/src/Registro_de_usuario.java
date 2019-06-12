@@ -1,27 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author David
- */
+import clases.login;
+import dao.TextPrompt;
+import javax.swing.JOptionPane;
+
 public class Registro_de_usuario extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Registro_de_usuario
-     */
+    login log = new login();
+    Registro_de_usuario reg = new Registro_de_usuario();
+    Inicio inic = new Inicio();
+
     public Registro_de_usuario() {
         initComponents();
         this.setLocationRelativeTo(null);
-        TextPrompt usuario=new TextPrompt("Ingrese su Nombre de Usuario",tf_usuario);
-        TextPrompt nombre=new TextPrompt("Ingrese su Nombre", tf_nombre);
-        TextPrompt apellido=new TextPrompt("Ingrese su Apellido", tf_apellido);
-        TextPrompt correo=new TextPrompt("Ingrese su Correo Electronico", tf_correo);
-        TextPrompt contra=new TextPrompt("Ingrese su contraseña", tf_contra);
-        TextPrompt numCelular=new TextPrompt("Ingrese su Numero de Celular", tf_num_celular);
+        TextPrompt usuario = new TextPrompt("Ingrese su Nombre de Usuario", tf_usuario);
+        TextPrompt nombre = new TextPrompt("Ingrese su Nombre", tf_nombre);
+        TextPrompt apellido = new TextPrompt("Ingrese su Apellido", tf_apellido);
+        TextPrompt correo = new TextPrompt("Ingrese su Correo Electronico", tf_correo);
+        TextPrompt contra = new TextPrompt("Ingrese su contraseña", tf_contra);
+        TextPrompt numCelular = new TextPrompt("Ingrese su Numero de Celular", tf_num_celular);
+        TextPrompt dia = new TextPrompt(" " + "  10", dd);
+        TextPrompt mes = new TextPrompt(" " + "  05", mm);
+        TextPrompt ano = new TextPrompt(" " + "  2019", yy);
     }
 
     /**
@@ -40,15 +39,16 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         usuario = new javax.swing.JLabel();
         barra = new javax.swing.JLabel();
         candado = new javax.swing.JLabel();
-        barra2 = new javax.swing.JLabel();
         visible = new javax.swing.JButton();
         noVisible = new javax.swing.JButton();
-        jdc_fecha_creacion = new com.toedter.calendar.JDateChooser();
         candado1 = new javax.swing.JLabel();
         barra3 = new javax.swing.JLabel();
         candado2 = new javax.swing.JLabel();
         barra4 = new javax.swing.JLabel();
         cumpleaños = new javax.swing.JLabel();
+        barra8 = new javax.swing.JLabel();
+        barra9 = new javax.swing.JLabel();
+        barra10 = new javax.swing.JLabel();
         barra5 = new javax.swing.JLabel();
         celular = new javax.swing.JLabel();
         barra6 = new javax.swing.JLabel();
@@ -58,13 +58,14 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         olvidemicontraseña = new javax.swing.JLabel();
         tf_num_celular = new javax.swing.JTextField();
         tf_correo = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        mm = new javax.swing.JTextField();
         tf_apellido = new javax.swing.JTextField();
         tf_nombre = new javax.swing.JTextField();
         tf_usuario = new javax.swing.JTextField();
         tf_contra = new javax.swing.JPasswordField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        yy = new javax.swing.JTextField();
+        dd = new javax.swing.JTextField();
+        RLSexo2 = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -101,9 +102,6 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         candado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Profile.png"))); // NOI18N
         getContentPane().add(candado, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 310, 30, -1));
 
-        barra2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
-        getContentPane().add(barra2, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 396, 420, 10));
-
         visible.setForeground(new java.awt.Color(255, 255, 255));
         visible.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Visible.jpg"))); // NOI18N
         visible.setBorder(null);
@@ -128,10 +126,6 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         });
         getContentPane().add(noVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(1112, 186, 30, 20));
 
-        jdc_fecha_creacion.setBackground(new java.awt.Color(255, 255, 255));
-        jdc_fecha_creacion.setForeground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(jdc_fecha_creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 370, 340, 30));
-
         candado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Candado.png"))); // NOI18N
         getContentPane().add(candado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 180, 20, 30));
 
@@ -146,6 +140,15 @@ public class Registro_de_usuario extends javax.swing.JFrame {
 
         cumpleaños.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/IMG_Cumpleaños.png"))); // NOI18N
         getContentPane().add(cumpleaños, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 370, 20, 30));
+
+        barra8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra8, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 390, 40, 10));
+
+        barra9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra9, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 390, 40, 10));
+
+        barra10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
+        getContentPane().add(barra10, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 390, 50, 10));
 
         barra5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_grande.png"))); // NOI18N
         getContentPane().add(barra5, new org.netbeans.lib.awtextra.AbsoluteConstraints(784, 330, 410, 10));
@@ -167,6 +170,11 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         btnAceptar.setBorderPainted(false);
         btnAceptar.setContentAreaFilled(false);
         btnAceptar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Aceptarsegundo.png"))); // NOI18N
+        btnAceptar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAceptarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(795, 624, 340, 50));
 
         olvidemicontraseña.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -195,8 +203,8 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         });
         getContentPane().add(tf_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 430, 340, 30));
 
-        jTextField3.setBorder(null);
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 370, 30, 30));
+        mm.setBorder(null);
+        getContentPane().add(mm, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 370, 40, 30));
 
         tf_apellido.setBorder(null);
         getContentPane().add(tf_apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 310, 330, 30));
@@ -208,13 +216,28 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         getContentPane().add(tf_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 130, 340, 30));
 
         tf_contra.setBorder(null);
-        getContentPane().add(tf_contra, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 190, 290, -1));
+        getContentPane().add(tf_contra, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 184, 290, 20));
 
-        jTextField4.setBorder(null);
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 370, 30, 30));
+        yy.setBorder(null);
+        yy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yyActionPerformed(evt);
+            }
+        });
+        getContentPane().add(yy, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 370, 50, 30));
 
-        jTextField5.setBorder(null);
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 370, 30, 30));
+        dd.setBorder(null);
+        dd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ddActionPerformed(evt);
+            }
+        });
+        getContentPane().add(dd, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 370, 40, 30));
+
+        RLSexo2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        RLSexo2.setForeground(new java.awt.Color(204, 0, 0));
+        RLSexo2.setText("Día           Mes             Año");
+        getContentPane().add(RLSexo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 340, 160, 24));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FondoIzquierdo.png"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -252,9 +275,84 @@ public class Registro_de_usuario extends javax.swing.JFrame {
         inicio.setVisible(true);
     }//GEN-LAST:event_btnRegresarActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
+        if (tf_usuario.getText().equals("") || tf_nombre.getText().equals("") || tf_apellido.getText().equals("") || tf_contra.getPassword().equals("") || dd.getText().equals("") || mm.getText().equals("") || yy.getText().equals("") || tf_num_celular.getText().equals("") || tf_correo.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "Hay campos vacios, debe llenar todos los datos");
+        } else {
+
+            String mensaje = "";
+
+            if (log.existeUsuario(tf_usuario.getText()) == 0) {
+
+                if (log.esEmail(tf_correo.getText())) {
+
+                    int d = Integer.parseInt(dd.getText());
+                    int m = Integer.parseInt(mm.getText());
+                    int y = Integer.parseInt(yy.getText());
+                    if (d > 0 && d <= 31) {
+                        if (m > 1 && m <= 12) {
+                            if (y > 999 && y <= 2018) {
+                                String fecha = new String(y + "-" + m + "-" + d);
+                                String pas_encr = clases.ENCRIPTACION.Encriptar(tf_contra.getText(), 2);
+                                log.setUsuario(tf_usuario.getText());
+                                log.setNombre(tf_nombre.getText());
+                                log.setApellido(tf_apellido.getText());
+                                log.setFecha_nac(fecha);
+                                log.setSexo(mensaje);
+                                log.setCorreo(tf_correo.getText());
+                                log.setPassword(pas_encr);
+                                //log.setIdtipo(1);
+
+                                if (log.registrar()) {
+                                    JOptionPane.showMessageDialog(null, "Registro Guardado");
+                                    reg.setVisible(false);
+                                    inic.setVisible(true);
+                                    LIMPIAR();
+
+                                } else {
+                                    JOptionPane.showMessageDialog(null, "Error al Guardar");
+                                    LIMPIAR();
+                                }
+                            } else {
+                                JOptionPane.showMessageDialog(null, "INGRESAR CORRECTAMENTE EL AÑO");
+                            }
+                        } else {
+                            JOptionPane.showMessageDialog(null, "INGRESAR CORRECTAMENTE EL MES");
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(null, "INGRESAR CORRECTAMENTE EL DIA");
+                    }
+
+                } else {
+                    JOptionPane.showMessageDialog(null, "El email es incorrecto");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "El usuario ya existe");
+                LIMPIAR();
+            }
+        }
+    }//GEN-LAST:event_btnAceptarActionPerformed
+
+    private void ddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ddActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ddActionPerformed
+
+    private void yyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yyActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yyActionPerformed
+
+    private void LIMPIAR() {
+        tf_usuario.setText("");
+        tf_nombre.setText("");
+        tf_apellido.setText("");
+        dd.setText("");
+        mm.setText("");
+        yy.setText("");
+        tf_correo.setText("");
+        //RPContraseña.setText("");
+        tf_contra.setText("");
+
+    }
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -289,13 +387,16 @@ public class Registro_de_usuario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BG;
+    private javax.swing.JLabel RLSexo2;
     private javax.swing.JLabel barra;
-    private javax.swing.JLabel barra2;
+    private javax.swing.JLabel barra10;
     private javax.swing.JLabel barra3;
     private javax.swing.JLabel barra4;
     private javax.swing.JLabel barra5;
     private javax.swing.JLabel barra6;
     private javax.swing.JLabel barra7;
+    private javax.swing.JLabel barra8;
+    private javax.swing.JLabel barra9;
     private javax.swing.JButton btnAceptar;
     private javax.swing.JButton btnRegresar;
     private javax.swing.JLabel candado;
@@ -304,22 +405,21 @@ public class Registro_de_usuario extends javax.swing.JFrame {
     private javax.swing.JLabel celular;
     private javax.swing.JLabel correo1;
     private javax.swing.JLabel cumpleaños;
+    private javax.swing.JTextField dd;
     private javax.swing.JLabel fondo;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private com.toedter.calendar.JDateChooser jdc_fecha_creacion;
     private javax.swing.JLabel logo_pequeño;
+    private javax.swing.JTextField mm;
     private javax.swing.JButton noVisible;
     private javax.swing.JLabel olvidemicontraseña;
     private javax.swing.JTextField tf_apellido;
-    private javax.swing.JPasswordField tf_contra;
-    private javax.swing.JTextField tf_correo;
-    private javax.swing.JTextField tf_nombre;
-    private javax.swing.JTextField tf_num_celular;
-    private javax.swing.JTextField tf_usuario;
+    public static javax.swing.JPasswordField tf_contra;
+    public static javax.swing.JTextField tf_correo;
+    public static javax.swing.JTextField tf_nombre;
+    public static javax.swing.JTextField tf_num_celular;
+    public static javax.swing.JTextField tf_usuario;
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel usuario;
     private javax.swing.JButton visible;
+    private javax.swing.JTextField yy;
     // End of variables declaration//GEN-END:variables
 }

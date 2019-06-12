@@ -6,7 +6,6 @@ import dao.TextPrompt;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author David
@@ -22,11 +21,15 @@ public class Clientes extends javax.swing.JFrame {
         TextPrompt ID = new TextPrompt("010203040506070809", tf_id);//ID
         TextPrompt nombre = new TextPrompt("Jorge Luis", tf_nombres);//NOMBRES
         TextPrompt apellido = new TextPrompt("Carrillo Gutierrez", tf_apellido);//APELLIDO
-        TextPrompt fecha_nac = new TextPrompt("27/01/1999", tf_Fecha_de_nacimiento);//FECHA DE NACIMIENTO
         TextPrompt correo_electronico = new TextPrompt("Jorge@gmail.com", tf_correoelectronico);//CORREO ELECTRONICO
         TextPrompt numer_celular = new TextPrompt("987654321", tf_numCelular);//NUMERO DE CELULAR
-        TextPrompt ingrese_su_fecha_registro = new TextPrompt("13/05/2015", tf_Fecha_de_registro1);//FECHA DE REGISTRO
         TextPrompt ultimaVista = new TextPrompt("13/05/2019", tf_ultima_vista);//ULTIMA VISTA
+        TextPrompt ddNacimiento = new TextPrompt(" " + " 10", dd_Nacimiento);
+        TextPrompt mmNacimiento = new TextPrompt(" " + " 10", mm_Nacimiento);
+        TextPrompt yyNacimiento = new TextPrompt(" " + " 2019", yy_Nacimiento);
+        TextPrompt ddVentas = new TextPrompt(" " + " 10", dd_registro);
+        TextPrompt mmVentas = new TextPrompt(" " + " 10", mm_registro);
+        TextPrompt yyVentas = new TextPrompt(" " + " 2019", yy_registro);
     }
 
     /**
@@ -39,7 +42,20 @@ public class Clientes extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        RLSexo3 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        mm_registro = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        yy_registro = new javax.swing.JTextField();
         btnRegresar = new javax.swing.JButton();
+        dd_registro = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        dd_Nacimiento = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        mm_Nacimiento = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        yy_Nacimiento = new javax.swing.JTextField();
         id = new javax.swing.JLabel();
         cliente = new javax.swing.JLabel();
         nombre = new javax.swing.JLabel();
@@ -57,8 +73,6 @@ public class Clientes extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jdc_fecha_nacimiento = new com.toedter.calendar.JDateChooser();
-        jdc_fecha_de_registro = new com.toedter.calendar.JDateChooser();
         btn = new javax.swing.JButton();
         btnmodificar = new javax.swing.JButton();
         btnagregar = new javax.swing.JButton();
@@ -71,15 +85,39 @@ public class Clientes extends javax.swing.JFrame {
         tf_nombres = new javax.swing.JTextField();
         tf_ultima_vista = new javax.swing.JTextField();
         tf_id = new javax.swing.JTextField();
-        tf_Fecha_de_nacimiento = new javax.swing.JTextField();
         tf_correoelectronico = new javax.swing.JTextField();
-        tf_Fecha_de_registro1 = new javax.swing.JTextField();
+        RLSexo2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        RLSexo3.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        RLSexo3.setForeground(new java.awt.Color(204, 0, 0));
+        RLSexo3.setText("Día           Mes             Año");
+        jPanel1.add(RLSexo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 80, 160, 24));
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 120, 40, 20));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 120, 40, 20));
+
+        mm_registro.setBorder(null);
+        jPanel1.add(mm_registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, 40, 30));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 120, 50, 20));
+
+        yy_registro.setBorder(null);
+        yy_registro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yy_registroActionPerformed(evt);
+            }
+        });
+        jPanel1.add(yy_registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 110, 50, 30));
 
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
         btnRegresar.setBorder(null);
@@ -92,6 +130,47 @@ public class Clientes extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 20, 40, 40));
+
+        dd_registro.setBorder(null);
+        dd_registro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dd_registroActionPerformed(evt);
+            }
+        });
+        jPanel1.add(dd_registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 110, 40, 30));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 40, 20));
+
+        dd_Nacimiento.setBorder(null);
+        dd_Nacimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dd_NacimientoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(dd_Nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, 40, 30));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 40, 20));
+
+        mm_Nacimiento.setBorder(null);
+        mm_Nacimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm_NacimientoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(mm_Nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 100, 40, 30));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 110, 50, 20));
+
+        yy_Nacimiento.setBorder(null);
+        yy_Nacimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yy_NacimientoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(yy_Nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 100, 50, 30));
 
         id.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         id.setText("ID:");
@@ -160,14 +239,6 @@ public class Clientes extends javax.swing.JFrame {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
-
-        jdc_fecha_nacimiento.setBackground(new java.awt.Color(255, 255, 255));
-        jdc_fecha_nacimiento.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jdc_fecha_nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 210, 30));
-
-        jdc_fecha_de_registro.setBackground(new java.awt.Color(255, 255, 255));
-        jdc_fecha_de_registro.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jdc_fecha_de_registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 110, 210, 30));
 
         btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_eliminar.png"))); // NOI18N
         btn.setAutoscrolls(true);
@@ -264,14 +335,6 @@ public class Clientes extends javax.swing.JFrame {
         tf_id.setBorder(null);
         jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 270, 30));
 
-        tf_Fecha_de_nacimiento.setBorder(null);
-        tf_Fecha_de_nacimiento.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tf_Fecha_de_nacimientoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(tf_Fecha_de_nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, 190, 30));
-
         tf_correoelectronico.setBorder(null);
         tf_correoelectronico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -280,13 +343,10 @@ public class Clientes extends javax.swing.JFrame {
         });
         jPanel1.add(tf_correoelectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, 190, 30));
 
-        tf_Fecha_de_registro1.setBorder(null);
-        tf_Fecha_de_registro1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tf_Fecha_de_registro1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(tf_Fecha_de_registro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 100, 210, 30));
+        RLSexo2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        RLSexo2.setForeground(new java.awt.Color(204, 0, 0));
+        RLSexo2.setText("Día           Mes             Año");
+        jPanel1.add(RLSexo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 160, 24));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -337,17 +397,9 @@ public class Clientes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_numCelularActionPerformed
 
-    private void tf_Fecha_de_nacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_Fecha_de_nacimientoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tf_Fecha_de_nacimientoActionPerformed
-
     private void tf_ultima_vistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_ultima_vistaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_ultima_vistaActionPerformed
-
-    private void tf_Fecha_de_registro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_Fecha_de_registro1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tf_Fecha_de_registro1ActionPerformed
 
     private void btnMinimisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinimisarActionPerformed
         this.setExtendedState(ICONIFIED);
@@ -357,6 +409,26 @@ public class Clientes extends javax.swing.JFrame {
         new Menu_Principal().setVisible(true);
         dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed
+
+    private void dd_NacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dd_NacimientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dd_NacimientoActionPerformed
+
+    private void yy_NacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yy_NacimientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yy_NacimientoActionPerformed
+
+    private void dd_registroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dd_registroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dd_registroActionPerformed
+
+    private void yy_registroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yy_registroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yy_registroActionPerformed
+
+    private void mm_NacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm_NacimientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mm_NacimientoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -394,6 +466,8 @@ public class Clientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel RLSexo2;
+    private javax.swing.JLabel RLSexo3;
     private javax.swing.JLabel apellido;
     private javax.swing.JButton btn;
     private javax.swing.JButton btnCerrar;
@@ -403,11 +477,19 @@ public class Clientes extends javax.swing.JFrame {
     private javax.swing.JButton btnmodificar;
     private javax.swing.JLabel cliente;
     private javax.swing.JLabel correo_electronico;
+    private javax.swing.JTextField dd_Nacimiento;
+    private javax.swing.JTextField dd_registro;
     private javax.swing.JLabel fecha_de_nacimiento;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel id;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -416,12 +498,10 @@ public class Clientes extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private com.toedter.calendar.JDateChooser jdc_fecha_de_registro;
-    private com.toedter.calendar.JDateChooser jdc_fecha_nacimiento;
+    private javax.swing.JTextField mm_Nacimiento;
+    private javax.swing.JTextField mm_registro;
     private javax.swing.JLabel nombre;
     private javax.swing.JLabel numero_de_celular;
-    private javax.swing.JTextField tf_Fecha_de_nacimiento;
-    private javax.swing.JTextField tf_Fecha_de_registro1;
     private javax.swing.JTextField tf_apellido;
     private javax.swing.JTextField tf_correoelectronico;
     private javax.swing.JTextField tf_id;
@@ -430,5 +510,7 @@ public class Clientes extends javax.swing.JFrame {
     private javax.swing.JTextField tf_ultima_vista;
     private javax.swing.JLabel ulti_vista;
     private javax.swing.JLabel utilizado;
+    private javax.swing.JTextField yy_Nacimiento;
+    private javax.swing.JTextField yy_registro;
     // End of variables declaration//GEN-END:variables
 }

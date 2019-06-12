@@ -26,6 +26,9 @@ public class Platillos extends javax.swing.JFrame {
         TextPrompt precio = new TextPrompt("Ingrese el precio", tf_precio);//PRECIO
         TextPrompt descripcion = new TextPrompt("Ingrese su Descripcion", tf_descripcion);//DESCRIPCION
         TextPrompt insumo = new TextPrompt("Ingrese su Insumos", tf_insumos);//INSUMOS
+        TextPrompt ddVentas = new TextPrompt(" " + "  10", dd_ventas);
+        TextPrompt mmVentas = new TextPrompt(" " + "  10", mm_ventas);
+        TextPrompt yyVentas = new TextPrompt(" " + "  2019",yy_ventas);
     }
 
     /**
@@ -38,7 +41,14 @@ public class Platillos extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
+        RLSexo2 = new javax.swing.JLabel();
+        dd_ventas = new javax.swing.JTextField();
+        mm_ventas = new javax.swing.JTextField();
+        yy_ventas = new javax.swing.JTextField();
         id = new javax.swing.JLabel();
         cupones = new javax.swing.JLabel();
         titulo = new javax.swing.JLabel();
@@ -56,9 +66,8 @@ public class Platillos extends javax.swing.JFrame {
         fondo = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        tf_Insumos = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -80,6 +89,15 @@ public class Platillos extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 110, 50, 20));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, 40, 20));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, 40, 20));
+
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
         btnRegresar.setBorder(null);
         btnRegresar.setBorderPainted(false);
@@ -91,6 +109,30 @@ public class Platillos extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 20, 40, 40));
+
+        RLSexo2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        RLSexo2.setForeground(new java.awt.Color(204, 0, 0));
+        RLSexo2.setText("Día           Mes             Año");
+        jPanel1.add(RLSexo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 160, 24));
+
+        dd_ventas.setBorder(null);
+        dd_ventas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dd_ventasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(dd_ventas, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 40, 30));
+
+        mm_ventas.setBorder(null);
+        jPanel1.add(mm_ventas, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 40, 30));
+
+        yy_ventas.setBorder(null);
+        yy_ventas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yy_ventasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(yy_ventas, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 100, 50, 30));
 
         id.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         id.setText("ID:");
@@ -200,14 +242,11 @@ public class Platillos extends javax.swing.JFrame {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 230, 10));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 120, 230, 10));
-
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 167, 230, 10));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 220, 230, 10));
+        tf_Insumos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(tf_Insumos, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 220, 230, 10));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 120, 230, 10));
@@ -231,7 +270,7 @@ public class Platillos extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 1260, 450));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 1240, 450));
 
         tf_id.setBorder(null);
         jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 230, 30));
@@ -288,6 +327,14 @@ public class Platillos extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed
 
+    private void dd_ventasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dd_ventasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dd_ventasActionPerformed
+
+    private void yy_ventasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yy_ventasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yy_ventasActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -324,6 +371,7 @@ public class Platillos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel RLSexo2;
     private javax.swing.JButton btn;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnMinimisar;
@@ -331,6 +379,7 @@ public class Platillos extends javax.swing.JFrame {
     private javax.swing.JButton btnagregar;
     private javax.swing.JButton btnmodificar;
     private javax.swing.JLabel cupones;
+    private javax.swing.JTextField dd_ventas;
     private javax.swing.JLabel descuento;
     private javax.swing.JLabel fechadecreacion;
     private javax.swing.JLabel fechadeuso;
@@ -339,15 +388,18 @@ public class Platillos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField mm_ventas;
     private javax.swing.JLabel stock;
+    private javax.swing.JLabel tf_Insumos;
     private javax.swing.JTextField tf_categoria;
     private javax.swing.JTextField tf_cocinero;
     private javax.swing.JTextField tf_descripcion;
@@ -359,5 +411,6 @@ public class Platillos extends javax.swing.JFrame {
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel utilizado;
     private javax.swing.JLabel valido;
+    private javax.swing.JTextField yy_ventas;
     // End of variables declaration//GEN-END:variables
 }

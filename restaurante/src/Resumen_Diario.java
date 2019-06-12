@@ -28,6 +28,11 @@ public class Resumen_Diario extends javax.swing.JFrame {
         TextPrompt meseros = new TextPrompt("010203040506070809", tf_meserostotales);//MESEROS
         TextPrompt patillo_total = new TextPrompt("010203040506070809", tf_patillostotales);//PLATILLO TOTALES
         TextPrompt total_cliente = new TextPrompt("010203040506070809", tf_totalcliente);//TOTAL CLIENTE
+        /*dia*/
+        TextPrompt ddDia = new TextPrompt(" " + " 10", dd_dia);
+        TextPrompt mmDia = new TextPrompt(" " + " 10", mm_dia);
+        TextPrompt yyDia = new TextPrompt(" " + " 2019", yy_dia);
+        
     }
 
     /**
@@ -41,6 +46,13 @@ public class Resumen_Diario extends javax.swing.JFrame {
 
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        dd_dia = new javax.swing.JTextField();
+        RLSexo2 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        mm_dia = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        yy_dia = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -79,7 +91,6 @@ public class Resumen_Diario extends javax.swing.JFrame {
         valido7 = new javax.swing.JLabel();
         stock1 = new javax.swing.JLabel();
         stock2 = new javax.swing.JLabel();
-        jdc_DIA = new com.toedter.calendar.JDateChooser();
         btnCerrar = new javax.swing.JButton();
         ResumenDiario = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
@@ -92,6 +103,44 @@ public class Resumen_Diario extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 40, 20));
+
+        dd_dia.setBorder(null);
+        dd_dia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dd_diaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(dd_dia, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 400, 40, 30));
+
+        RLSexo2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        RLSexo2.setForeground(new java.awt.Color(204, 0, 0));
+        RLSexo2.setText("Día           Mes             Año");
+        jPanel1.add(RLSexo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, 160, 24));
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 40, 20));
+
+        mm_dia.setBorder(null);
+        mm_dia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm_diaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(mm_dia, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, 40, 30));
+
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, 50, 20));
+
+        yy_dia.setBorder(null);
+        yy_dia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yy_diaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(yy_dia, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 50, 30));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 230, 10));
@@ -279,10 +328,6 @@ public class Resumen_Diario extends javax.swing.JFrame {
         stock2.setText("Cargo:");
         jPanel1.add(stock2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 60, 30));
 
-        jdc_DIA.setBackground(new java.awt.Color(255, 255, 255));
-        jdc_DIA.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jdc_DIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 270, 30));
-
         jScrollPane2.setViewportView(jPanel1);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1280, 650));
@@ -383,6 +428,18 @@ public class Resumen_Diario extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed
 
+    private void dd_diaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dd_diaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dd_diaActionPerformed
+
+    private void mm_diaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm_diaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mm_diaActionPerformed
+
+    private void yy_diaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yy_diaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yy_diaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -419,16 +476,19 @@ public class Resumen_Diario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel RLSexo2;
     private javax.swing.JLabel ResumenDiario;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnMinimisar;
     private javax.swing.JButton btnRegresar;
+    private javax.swing.JTextField dd_dia;
     private javax.swing.JLabel descuento;
     private javax.swing.JLabel fechadecreacion;
     private javax.swing.JLabel fechadeuso;
     private javax.swing.JLabel fechadeuso1;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel id;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -438,11 +498,13 @@ public class Resumen_Diario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
-    private com.toedter.calendar.JDateChooser jdc_DIA;
+    private javax.swing.JTextField mm_dia;
     private javax.swing.JLabel stock;
     private javax.swing.JLabel stock1;
     private javax.swing.JLabel stock2;
@@ -465,5 +527,6 @@ public class Resumen_Diario extends javax.swing.JFrame {
     private javax.swing.JLabel valido5;
     private javax.swing.JLabel valido6;
     private javax.swing.JLabel valido7;
+    private javax.swing.JTextField yy_dia;
     // End of variables declaration//GEN-END:variables
 }

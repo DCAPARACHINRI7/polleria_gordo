@@ -19,7 +19,7 @@ public class Conexion {
     public static Connection getConexion() 
         {
            /* una varible donde sera almacenado esta url de la conexion*/
-            String url = "jdbc:sqlserver://DESKTOP-268N9O0\\SQLEXPRESS:1433;databaseName=proy_polleria";
+            String url = "jdbc:sqlserver://CP_ESCRITORIO\\INGCODE:1433;databaseName=proy_polleria";
             try 
                 {
 

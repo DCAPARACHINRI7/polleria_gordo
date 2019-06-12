@@ -149,6 +149,11 @@ public class Menu_Principal extends javax.swing.JFrame {
         personal.setBorderPainted(false);
         personal.setContentAreaFilled(false);
         personal.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/img/personal_segundo.png"))); // NOI18N
+        personal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                personalActionPerformed(evt);
+            }
+        });
         jPanel2.add(personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(978, 172, 140, 160));
 
         btncliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/clientes.png"))); // NOI18N
@@ -229,6 +234,11 @@ public class Menu_Principal extends javax.swing.JFrame {
         new Platillos().setVisible(true);
         dispose();
     }//GEN-LAST:event_btnplatilloActionPerformed
+
+    private void personalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personalActionPerformed
+        new Personal().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_personalActionPerformed
 
     /**
      * @param args the command line arguments

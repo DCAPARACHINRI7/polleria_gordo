@@ -6,7 +6,6 @@ import dao.TextPrompt;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author David
@@ -23,11 +22,17 @@ public class Cupones extends javax.swing.JFrame {
         TextPrompt titulo = new TextPrompt("Feliz Día de las Madres", tf_titulo);//TITULO
         TextPrompt descuento = new TextPrompt("10%", tf_descuento);//DESCUENTO
         TextPrompt stock = new TextPrompt("100", tf_stock);//STOCK
-        TextPrompt fechacaducacion = new TextPrompt("23/05/2019", tf_fecha_de_caducidad);//FECHA DE CADUCACION
-        TextPrompt fechacreacion = new TextPrompt("13/05/2019", tf_fecha_de_creacion);//FECHA DE CREACION
         TextPrompt fechauso = new TextPrompt("14/05/2019", tf_fecha_de_uso);//FECHA DE USO
         TextPrompt utilizado = new TextPrompt("Jorge Luis Gutierrez", tf_utilizado);//UTILIZADO
         TextPrompt valido = new TextPrompt("Todos los platillos", tf_valido);//VALIDO
+        /*creacion*/
+        TextPrompt ddCreacion = new TextPrompt(" " + " 10", dd_Creacion);
+        TextPrompt mmCreacion = new TextPrompt(" " + " 10", mm_Creacion);
+        TextPrompt yyCreacion = new TextPrompt(" " + " 2019", yy_Creacion);
+        /*caducidad*/
+        TextPrompt ddCaducidad = new TextPrompt(" " + " 10", dd_Caducidad);
+        TextPrompt mmCaducidad = new TextPrompt(" " + " 10", mm_Caducidad);
+        TextPrompt yyCaducidad = new TextPrompt(" " + " 2019", yy_Caducidad);
 
     }
 
@@ -41,6 +46,20 @@ public class Cupones extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        RLSexo3 = new javax.swing.JLabel();
+        dd_Caducidad = new javax.swing.JTextField();
+        jLabel19 = new javax.swing.JLabel();
+        mm_Caducidad = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        yy_Caducidad = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        dd_Creacion = new javax.swing.JTextField();
+        RLSexo2 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        mm_Creacion = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        yy_Creacion = new javax.swing.JTextField();
         btnRegresar = new javax.swing.JButton();
         id = new javax.swing.JLabel();
         cupones = new javax.swing.JLabel();
@@ -64,19 +83,15 @@ public class Cupones extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jdc_fecha_caducidad = new com.toedter.calendar.JDateChooser();
-        jdc_fecha_creacion = new com.toedter.calendar.JDateChooser();
         btnCerrar = new javax.swing.JButton();
         fondo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        tf_fecha_de_caducidad = new javax.swing.JTextField();
         tf_id = new javax.swing.JTextField();
         tf_titulo = new javax.swing.JTextField();
         tf_stock = new javax.swing.JTextField();
         tf_valido = new javax.swing.JTextField();
         tf_descuento = new javax.swing.JTextField();
-        tf_fecha_de_creacion = new javax.swing.JTextField();
         tf_utilizado = new javax.swing.JTextField();
         tf_fecha_de_uso = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -87,6 +102,82 @@ public class Cupones extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 220, 40, 20));
+
+        RLSexo3.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        RLSexo3.setForeground(new java.awt.Color(204, 0, 0));
+        RLSexo3.setText("Día           Mes             Año");
+        jPanel1.add(RLSexo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 180, 160, 24));
+
+        dd_Caducidad.setBorder(null);
+        dd_Caducidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dd_CaducidadActionPerformed(evt);
+            }
+        });
+        jPanel1.add(dd_Caducidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 210, 40, 30));
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 220, 40, 20));
+
+        mm_Caducidad.setBorder(null);
+        mm_Caducidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm_CaducidadActionPerformed(evt);
+            }
+        });
+        jPanel1.add(mm_Caducidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 210, 40, 30));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 220, 50, 20));
+
+        yy_Caducidad.setBorder(null);
+        yy_Caducidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yy_CaducidadActionPerformed(evt);
+            }
+        });
+        jPanel1.add(yy_Caducidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 210, 50, 30));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 220, 40, 20));
+
+        dd_Creacion.setBorder(null);
+        dd_Creacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dd_CreacionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(dd_Creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 210, 40, 30));
+
+        RLSexo2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        RLSexo2.setForeground(new java.awt.Color(204, 0, 0));
+        RLSexo2.setText("Día           Mes             Año");
+        jPanel1.add(RLSexo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 160, 24));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 220, 40, 20));
+
+        mm_Creacion.setBorder(null);
+        mm_Creacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm_CreacionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(mm_Creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 210, 40, 30));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 220, 50, 20));
+
+        yy_Creacion.setBorder(null);
+        yy_Creacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yy_CreacionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(yy_Creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 210, 50, 30));
 
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Back.png"))); // NOI18N
         btnRegresar.setBorder(null);
@@ -214,14 +305,6 @@ public class Cupones extends javax.swing.JFrame {
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Separador_negro.png"))); // NOI18N
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 230, 10));
 
-        jdc_fecha_caducidad.setBackground(new java.awt.Color(255, 255, 255));
-        jdc_fecha_caducidad.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jdc_fecha_caducidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 200, 210, 30));
-
-        jdc_fecha_creacion.setBackground(new java.awt.Color(255, 255, 255));
-        jdc_fecha_creacion.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jdc_fecha_creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 210, 30));
-
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn_Cerrar.png"))); // NOI18N
         btnCerrar.setAutoscrolls(true);
         btnCerrar.setBorder(null);
@@ -253,9 +336,6 @@ public class Cupones extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 1260, 450));
 
-        tf_fecha_de_caducidad.setBorder(null);
-        jPanel1.add(tf_fecha_de_caducidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 200, 200, 30));
-
         tf_id.setBorder(null);
         jPanel1.add(tf_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 260, 30));
 
@@ -270,9 +350,6 @@ public class Cupones extends javax.swing.JFrame {
 
         tf_descuento.setBorder(null);
         jPanel1.add(tf_descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 250, 30));
-
-        tf_fecha_de_creacion.setBorder(null);
-        jPanel1.add(tf_fecha_de_creacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 200, 30));
 
         tf_utilizado.setBorder(null);
         tf_utilizado.addActionListener(new java.awt.event.ActionListener() {
@@ -324,6 +401,30 @@ public class Cupones extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed
 
+    private void dd_CreacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dd_CreacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dd_CreacionActionPerformed
+
+    private void mm_CreacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm_CreacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mm_CreacionActionPerformed
+
+    private void yy_CreacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yy_CreacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yy_CreacionActionPerformed
+
+    private void dd_CaducidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dd_CaducidadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dd_CaducidadActionPerformed
+
+    private void mm_CaducidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm_CaducidadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mm_CaducidadActionPerformed
+
+    private void yy_CaducidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yy_CaducidadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yy_CaducidadActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -360,6 +461,8 @@ public class Cupones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel RLSexo2;
+    private javax.swing.JLabel RLSexo3;
     private javax.swing.JButton btn;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnMinimisar;
@@ -367,6 +470,8 @@ public class Cupones extends javax.swing.JFrame {
     private javax.swing.JButton btnagregar;
     private javax.swing.JButton btnmodificar;
     private javax.swing.JLabel cupones;
+    private javax.swing.JTextField dd_Caducidad;
+    private javax.swing.JTextField dd_Creacion;
     private javax.swing.JLabel descuento;
     private javax.swing.JLabel fechadecreacion;
     private javax.swing.JLabel fechadeuso;
@@ -375,7 +480,13 @@ public class Cupones extends javax.swing.JFrame {
     private javax.swing.JLabel id;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -385,12 +496,10 @@ public class Cupones extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private com.toedter.calendar.JDateChooser jdc_fecha_caducidad;
-    private com.toedter.calendar.JDateChooser jdc_fecha_creacion;
+    private javax.swing.JTextField mm_Caducidad;
+    private javax.swing.JTextField mm_Creacion;
     private javax.swing.JLabel stock;
     private javax.swing.JTextField tf_descuento;
-    private javax.swing.JTextField tf_fecha_de_caducidad;
-    private javax.swing.JTextField tf_fecha_de_creacion;
     private javax.swing.JTextField tf_fecha_de_uso;
     private javax.swing.JTextField tf_id;
     private javax.swing.JTextField tf_stock;
@@ -400,5 +509,7 @@ public class Cupones extends javax.swing.JFrame {
     private javax.swing.JLabel titulo;
     private javax.swing.JLabel utilizado;
     private javax.swing.JLabel valido;
+    private javax.swing.JTextField yy_Caducidad;
+    private javax.swing.JTextField yy_Creacion;
     // End of variables declaration//GEN-END:variables
 }

@@ -55,17 +55,12 @@ public class login extends usuario {
         PreparedStatement ps = null;
         Connection con = getConexion();
 
-        String sql = "INSERT INTO USUARIOS (USUARIO, NOMBRE, APELLIDO, FECHA_NAC, SEXO, DIRECCION, CORREO, CONTRASEÑA, FECHA_ACC, IDTIPOUSU) VALUES(?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO USUARIOS VALUES(?,?)";
 
         try {
             ps = con.prepareStatement(sql);
             ps.setString(1, getUsuario());
-            ps.setString(2, getNombre());
-            ps.setString(3, getApellido());
-            ps.setString(4, getFecha_nac());
-            ps.setString(5, getSexo());
-            ps.setString(6, getCorreo());
-            ps.setString(7, getPassword());
+            ps.setString(2, getPassword());
 
             ps.execute();
             return true;
